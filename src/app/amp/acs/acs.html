@@ -1,0 +1,32 @@
+<navbar-component></navbar-component>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <newac-component></newac-component>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Our Aircrafts</h3>
+                    <hr>
+                    <div class="list-group">
+                      <div *ngFor="let one of acs" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">A/C Registration {{ one.ac_reg }}</h5>
+                          <small>A/C Model: {{ one.model }}</small>
+                        </div>
+                        <small>A/C Serial No: {{ one.serial_no }}</small>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

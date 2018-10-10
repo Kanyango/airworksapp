@@ -1,0 +1,50 @@
+<navbar-component></navbar-component>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <a routerLink="/newpn" class="btn btn-md btn-info float-right">new part no</a>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-tile">Part Nos</h3>
+                    <hr>
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action flex-column align-items-start" *ngFor="let one of pns">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Part No. &nbsp;{{ one.pn }}</h5>
+                              <small>Active:&nbsp;{{ one.active }}</small>
+                            </div>
+                            <p class="mb-1">ATA Chapter &nbsp;{{ one.chap }}</p>
+                            <small>ATA section &nbsp;{{ one.sec }}</small>
+                          <br>
+                          <br>
+                          <button type="button" class="btn btn-outline-info" (click)="isCollapsed = !isCollapsed"
+                                  [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                            reliablity
+                          </button>
+                          <br>
+                          <br>
+                          <div id="collapseExample" [ngbCollapse]="isCollapsed">
+                              <div class="card">
+                                <div class="card-body">
+                                  <span>Recurrent Type: {{ one.rel.recur_type }}</span>
+                                    <br>
+                                  <span>No Of Removals: {{ one.rel.no_rem }}</span>
+                                    <br>
+                                  <span>No Of Days: {{ one.rel.no_days }}</span>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

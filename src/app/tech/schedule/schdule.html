@@ -1,0 +1,49 @@
+<navbar-component></navbar-component>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <a routerLink="/newschedules" class="btn btn-outline-primary float-right" type="button">
+                new flight schedule
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Flight Schedules</h3>
+                    <hr>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="search aircraft"/>
+                            &nbsp;&nbsp;
+                            <button class="btn btn-success" type="button">
+                                search
+                            </button>
+                        </div>
+                    </form>
+                    <br>
+                   
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action flex-column align-items-start " *ngFor="let one of schedules">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">A/C : {{ one.ac }}</h5>
+                          <small>Flight: {{ one.flight }}</small>
+                        </div>
+                        <p class="mb-1">Schedule Date/Time: {{ one.schedule }}, 
+                            {{ one.sch_time }}</p>
+                          <p class="mb-1">Arrival Date/Time: {{ one.arrival }}, 
+                            {{ one.arr_time }}</p>
+                        <small>Flight: {{ one.flight }}</small>
+                        
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

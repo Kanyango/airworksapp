@@ -1,0 +1,48 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">New Aircraft</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]='newAcForm' (ngSubmit)="PostData(signupForm)">
+     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>A/C Reg</label>  
+                    <input formControlName="ac_reg" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Build Date</label>  
+                    <input formControlName="build_date" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Model</label>  
+                    <input formControlName="model" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Serial No</label>  
+                    <input formControlName="serial_no" class="form-control">
+                  </div>
+            </div> 
+            
+        </div>   
+     </div>
+      
+      
+        <button class="btn btn-success btn-lg float-right" type="submit">save</button>
+    </form>
+  </div>
+  <div class="modal-footer">
+<!--
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+        add
+    </button>
+-->
+  </div>
+</ng-template>
+
+<button class="btn btn-outline-primary float-right" (click)="open(content)">
+    new aircraft</button>

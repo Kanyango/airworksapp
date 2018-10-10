@@ -1,0 +1,54 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">New User</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]='taskCardForm' (ngSubmit)="PostData(signupForm)">
+     <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Username</label>  
+                    <input formControlName="task_no" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>  
+                    <input formControlName="description" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label>Employee No</label>  
+                    <input formControlName="part_no" class="form-control">
+                  </div>
+            </div> 
+            <div class="col-md-6">
+               <div class="form-group">
+                <label>Status</label>  
+                <input formControlName="serial_no" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Access Level</label>  
+                  <select formControlName="action" class="form-control">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                  </select>
+              </div>
+              
+            </div>
+        </div>   
+     </div>
+      
+      
+        <button class="btn btn-lg btn-success float-right" type="submit">save</button>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
+        add
+    </button>
+  </div>
+</ng-template>
+
+<button class="btn btn-outline-primary float-right" (click)="open(content)">add user</button>

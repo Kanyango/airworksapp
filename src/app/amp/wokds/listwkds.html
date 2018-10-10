@@ -1,0 +1,30 @@
+<navbar-component></navbar-component>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Work Orders</h3>
+                    <hr>
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action flex-column align-items-start" *ngFor="let one of workords">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Order No: {{ one.wordno }}</h5>
+                          <small>Status: {{ one.status }}</small>
+                            <button class="btn btn-success" (click)="print()" type="button">
+                                print
+                            </button>
+                        </div>
+                        <p class="mb-1">Priority: {{ one.priority }}</p>
+                        <small>Aircraft: {{ one.ac }}</small>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<navbar-component></navbar-component>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <a routerLink="/newaclog" class="btn btn-outline-primary float-right" type="button">
+                new ecm log
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">A/C ECM </h3>
+                    <hr>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="search aircraft"/>
+                            &nbsp;&nbsp;
+                            <button class="btn btn-success" type="button">
+                                search
+                            </button>
+                        </div>
+                    </form>
+                    <br>
+                   
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action flex-column align-items-start " *ngFor="let one of ecms">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">A/C : {{ one.ac }}</h5>
+                            
+                          <small>Flight Log: {{ one.flight_log }}</small>
+                            
+                        </div>
+                        <p class="mb-1"></p>
+                        <small>Flight Date: {{ one.flight_date }}</small>
+                          <a routerLink="/addecm" class="btn btn-outline-info float-right" type="button">
+                            add
+                          </a>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
