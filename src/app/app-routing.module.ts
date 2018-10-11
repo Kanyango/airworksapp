@@ -27,9 +27,11 @@ import { NewSchedulesComponent } from './tech/schedule/newschedule';
 import { ECMComponent } from './tech/ecm/ecm';
 import { ADDECMComponent } from './tech/ecm/add';
 import { DelayComponent } from './tech/flights/delay';
+import { LoginComponent } from './login/login';
 
 const routes: Routes = 
         [
+            { path: '', component: LoginComponent },
             { path: 'dashboard', component: DashComponent },
             { path: 'workorders', component: WorkOrdersComponent },
             { path: 'tasks', component: TaskCardsComponent },
