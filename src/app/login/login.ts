@@ -11,7 +11,15 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 export class LoginComponent implements OnInit
 {
-    
+  
+    constructor(private fb: FormBuilder, 
+                private element: ElementRef,
+                private route: ActivatedRoute,
+                private router: Router){}
+    login()
+    {
+      this.router.navigate(['/aircrafts']);
+    }
    
   
 }
