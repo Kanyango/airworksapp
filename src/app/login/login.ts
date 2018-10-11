@@ -9,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
     templateUrl: './login.html'
 })
 
-export class LoginComponent implements OnInit
+export class LoginComponent 
 {
   
     constructor(private fb: FormBuilder, 
