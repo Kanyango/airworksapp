@@ -45,6 +45,7 @@ import { ECMComponent } from './tech/ecm/ecm';
 import { ADDECMComponent } from './tech/ecm/add';
 import { DelayComponent } from './tech/flights/delay';
 import { FlightUnitsComponent } from './tech/flights/units';
+import { LoginComponent } from './login/login';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { FlightUnitsComponent } from './tech/flights/units';
     ECMComponent,
     ADDECMComponent,
     DelayComponent,
-    FlightUnitsComponent
+    FlightUnitsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
