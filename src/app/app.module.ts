@@ -46,6 +46,7 @@ import { ADDECMComponent } from './tech/ecm/add';
 import { DelayComponent } from './tech/flights/delay';
 import { FlightUnitsComponent } from './tech/flights/units';
 import { LoginComponent } from './login/login';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { LoginComponent } from './login/login';
     BrowserModule,
     AppRoutingModule,
     NgbModule.forRoot(),
+    NgxEchartsModule,
     RouterModule,
     SuiModule,
     HttpClientModule,
