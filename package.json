@@ -23,6 +23,8 @@
     "core-js": "^2.4.1",
     "express": "^4.16.3",
     "electron": "^3.0.0",
+    "echarts": "^4.1.0",
+    "ngx-echarts": "^2.3.1",
     "html2canvas": "^1.0.0-alpha.12",
     "jspdf": "^1.4.1",
     "ng2-semantic-ui": "^0.9.7",
