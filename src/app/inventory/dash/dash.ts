@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'dashinv-component',
-    templateUrl: './dashinv.html'
+    templateUrl: './dash.html'
 })
 
 export class DashInventoryComponent
