@@ -17,7 +17,7 @@ export class ACStatusComponent
             var img = canvas.toDataURL("image/png");
             var doc = new jsPDF();
             doc.addImage(img,'JPEG',0,20);
-            doc.save('testCanvas.pdf');
+            doc.save('ac_status.pdf');
         });
     }
 
