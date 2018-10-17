@@ -28,6 +28,7 @@ import { ECMComponent } from './tech/ecm/ecm';
 import { ADDECMComponent } from './tech/ecm/add';
 import { DelayComponent } from './tech/flights/delay';
 import { LoginComponent } from './login/login';
+import { DashInventoryComponent } from './inventory/dash/dash';
 
 const routes: Routes = 
         [
@@ -58,7 +59,8 @@ const routes: Routes =
             { path: 'newschedules', component: NewSchedulesComponent },
             { path: 'acecm', component: ECMComponent },
             { path: 'addecm', component: ADDECMComponent },
-            { path: 'delay', component: DelayComponent }
+            { path: 'delay', component: DelayComponent },
+          { path: 'invdash', component: DashInventoryComponent }
         ];
 
 @NgModule({
