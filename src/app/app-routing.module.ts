@@ -29,7 +29,7 @@ import { ADDECMComponent } from './tech/ecm/add';
 import { DelayComponent } from './tech/flights/delay';
 import { LoginComponent } from './login/login';
 import { DashInventoryComponent } from './inventory/dash/dash';
-import { ACStatusComponent } from '/reports/acstatus';
+import { ACStatusComponent } from './reports/acstatus';
 
 
 const routes: Routes = 
