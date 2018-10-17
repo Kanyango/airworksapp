@@ -48,6 +48,7 @@ import { FlightUnitsComponent } from './tech/flights/units';
 import { LoginComponent } from './login/login';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { DashInventoryComponent } from './inventory/dash/dash';
+import { ACStatusComponent } from '/reports/acstatus';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { DashInventoryComponent } from './inventory/dash/dash';
     DelayComponent,
     FlightUnitsComponent,
     LoginComponent,
-    DashInventoryComponent
+    DashInventoryComponent,
+    ACStatusComponent
   ],
   imports: [
     BrowserModule,
