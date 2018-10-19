@@ -62,11 +62,38 @@
                           </form>
                         </ng-template>
                       </ngb-tab>
+                      
+                      
                       <ngb-tab title="Inventory">
                         <ng-template ngbTabContent> 
-                          
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-3">
+                                <label>I.P.C No</label>
+                                <input type="text">
+                              </div>
+                            </div>
+                            <div class="row">
+                                <input type="checkbox" > Non-Repairable Part 
+                                <input type="checkbox" > Non-Exchangable Part 
+                                <input type="checkbox" > Inventory Monitored 
+                                <input type="checkbox" > Shelf Life Flag 
+                                <input type="checkbox" > Unlimited Shelf Life Flag 
+                            </div>
+                            <div class="row">
+                                <input type="checkbox" > Tool Control
+                                <input type="checkbox" > Tool Calibration Flag
+                                &nbsp;&nbsp; Days<input type="text" >  
+                                <input type="checkbox" > Climate Controlled
+                            </div>
+                            <div class="row">
+                              <input type="checkbox" > Static Sensitive Part
+                               <input type="checkbox" > Avionic Part
+                            </div>
                         </ng-template>
                       </ngb-tab>
+                      
+                      
                       <ngb-tab title="Costing">
                         <ng-template ngbTabContent> 
                           
