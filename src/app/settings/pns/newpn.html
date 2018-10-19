@@ -73,6 +73,8 @@
                                 <input type="text">
                               </div>
                             </div>
+                            <br>
+                            <br>
                             <div class="row">
                                 <input type="checkbox" > Non-Repairable Part 
                                 <input type="checkbox" > Non-Exchangable Part 
@@ -80,12 +82,16 @@
                                 <input type="checkbox" > Shelf Life Flag 
                                 <input type="checkbox" > Unlimited Shelf Life Flag 
                             </div>
+                            <br>
+                            <br>
                             <div class="row">
                                 <input type="checkbox" > Tool Control
                                 <input type="checkbox" > Tool Calibration Flag
                                 &nbsp;&nbsp; Days<input type="text" >  
                                 <input type="checkbox" > Climate Controlled
                             </div>
+                            <br>
+                            <br>
                             <div class="row">
                               <input type="checkbox" > Static Sensitive Part
                                <input type="checkbox" > Avionic Part
@@ -95,14 +101,67 @@
                       </ngb-tab>
                       
                       
-                      <ngb-tab title="Costing">
+                      <!-- <ngb-tab title="Costing">
                         <ng-template ngbTabContent> 
                           
                         </ng-template>
                       </ngb-tab>
+                      -->
                       <ngb-tab title="Tech Records">
                         <ng-template ngbTabContent> 
-                          
+                          <div class="container">
+                            <div class="row">
+                              <div style="display: inline-block">
+                                <label>Maintenace Control</label>
+                                <input type="text" />
+                              </div>
+                              <div style="display: inline-block">
+                                <label>Maintenace Program</label>
+                                <input type="text" />
+                              </div>
+                              <div style="display: inline-block">
+                                <label>Hours Factor</label>
+                                <input type="text" />
+                              </div>
+                              <div style="display: inline-block">
+                                <label>Cycles Factor</label>
+                                <input type="text" />
+                              </div>
+                              <div style="display: inline-block">
+                                <label>APU Reading & Recording</label>
+                                <input type="text" />
+                              </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="row">
+                              
+                                
+                                <input type="radio" /> APU
+                                <input type="radio" /> Engine
+                                <input type="radio" /> Landing Gear
+                               <input type="radio" /> Disk
+                              <input type="radio" /> Module
+                              <input type="radio" /> Recorder
+                              
+                            </div>
+                            <br>
+                            <br>
+                            <div class="row">
+                              <div style="display: inline-block">
+                                <label>A/C Type Series</label>
+                                <input type="text" />
+                              </div>
+                              <div style="display: inline-block">
+                                <label>Hours Factor</label>
+                                <input type="text" />
+                              </div>
+                              <div style="display: inline-block">
+                                <label>Cycles Factor</label>
+                                <input type="text" />
+                              </div>
+                            </div>
+                          </div>
                         </ng-template>
                       </ngb-tab>
                       <ngb-tab>
