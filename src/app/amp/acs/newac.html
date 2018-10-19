@@ -10,7 +10,10 @@
   <ngb-tab title="General">
     <ng-template ngbTabContent>
       <form>
+        <br>
+        <br>
         <input type="checkbox" /> Active
+        <br>
         <br>
         <div class="container">
           <div class="row">
@@ -66,7 +69,50 @@
   <ngb-tab>
     <ng-template ngbTabTitle>Info</ng-template>
     <ng-template ngbTabContent>
-      
+      <form>
+        <div class="container">
+          <div class="row">
+            <div class="form-group">
+              <label>Current A/C Flight Hrs</label>
+              <input type="text" class="form-control" />
+            </div>
+            
+            <div class="form-group">
+              <label>Block Hrs/Min</label>
+              <input type="text" class="form-control"/>
+            </div>
+            
+            <div class="form-group">
+              <label>A/C Cycles</label>
+              <input type="text" class="form-control" />
+            </div>
+            
+            <div class="form-group">
+              <label>RIN</label>
+              <input type="text"  class="form-control"/>
+            </div>
+            
+            <div class="form-group">
+              <label>Time As Of</label>
+              <input type="text" class="form-control"/>
+            </div>
+            
+            <div class="form-group">
+              <label>Sampling</label>
+              <input type="text" class="form-control"/>
+            </div>
+            
+            <div class="form-group">
+              <label>Current A/C Flight Hrs</label>
+              <input type="text" class="form-control" />
+            </div>
+            
+          </div>
+          <br>
+          <br>
+          
+        </div>
+      </form>
     </ng-template>
   </ngb-tab>
   <ngb-tab title="Disabled" [disabled]="true">
