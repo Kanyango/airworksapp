@@ -1,1 +1,104 @@
 
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">New Employee</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <ngb-tabset>
+  <ngb-tab title="General">
+    <ng-template ngbTabContent>
+    
+      <form>
+        <div class="container">
+          <div class="row">
+            <div class="form-group">
+              <label>Name</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>Status</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>Department</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>Posn</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>ID</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>Inspector Stamp</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>Inspector Skill</label>
+              <input>
+            </div>
+          </div>
+     
+        </div>
+        </form>
+      </ng-template>
+      
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle>License</ng-template>
+    <ng-template ngbTabContent>
+      <form>
+        <div class="form-group">
+          <label>Issuing Authority</label>
+          <input />
+          <input>
+        </div>
+        <div class="form-group">
+          <label>Type</label>
+          <input />
+          <input>
+        </div>
+        <div class="form-group">
+          <label>License</label>
+          <input />
+          <input>
+        </div>
+        <div class="form-group">
+          <label>Status</label>
+          <input />
+          <input>
+        </div>
+        <div class="form-group">
+          <label>Issued Active Date</label>
+          <input />
+          <input>
+        </div>
+        <div class="form-group">
+          <label>Verify Date</label>
+          <input />
+          <input>
+        </div>
+        <div class="form-group">
+          <label>Expiration Date</label>
+          <input />
+          <input>
+        </div>
+    
+      </form>
+    </ng-template>
+  </ngb-tab> 
+    
+ </ngb-tabset>
+    
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
+
+<button class="btn btn-lg btn-primary" (click)="open(content)">add employee</button>
