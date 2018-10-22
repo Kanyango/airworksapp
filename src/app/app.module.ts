@@ -53,6 +53,9 @@ import { NewAircraftUnitComponent } from './amp/acs/units';
 import { MELsComponent } from './mel/mel';
 import { NewMELComponent } from './mel/newmel';
 
+import { RoutesComponent } from './routes/routes';
+import { NewRouteComponent } from './routes/newroute';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -97,7 +100,9 @@ import { NewMELComponent } from './mel/newmel';
     ACStatusComponent,
     NewAircraftUnitComponent,
     MELsComponent,
-    NewMELComponent
+    NewMELComponent,
+    RoutesComponent,
+    NewRouteComponent
   ],
   imports: [
     BrowserModule,
