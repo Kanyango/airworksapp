@@ -97,7 +97,7 @@ import { NewMELComponent } from './mel/newmel';
     ACStatusComponent,
     NewAircraftUnitComponent,
     MELsComponent,
-    NewMELsComponent
+    NewMELComponent
   ],
   imports: [
     BrowserModule,
