@@ -30,6 +30,7 @@ import { DelayComponent } from './tech/flights/delay';
 import { LoginComponent } from './login/login';
 import { DashInventoryComponent } from './inventory/dash/dash';
 import { ACStatusComponent } from './reports/acstatus';
+import { MELsComponent } from './mel/mel';
 
 
 const routes: Routes = 
@@ -63,7 +64,8 @@ const routes: Routes =
             { path: 'addecm', component: ADDECMComponent },
             { path: 'delay', component: DelayComponent },
             { path: 'invdash', component: DashInventoryComponent },
-            { path: 'acstatus', component: ACStatusComponent }
+            { path: 'acstatus', component: ACStatusComponent },
+            { path: 'mels', component: MELsComponent }
         ];
 
 @NgModule({
