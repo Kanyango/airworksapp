@@ -108,7 +108,7 @@ import { NewEMPComponent } from './emps/newemp';
     RoutesComponent,
     NewRouteComponent,
     EmpsComponent,
-    NewEmpsComponent
+    NewEmpComponent
     
   ],
   imports: [
