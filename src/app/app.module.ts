@@ -51,7 +51,7 @@ import { DashInventoryComponent } from './inventory/dash/dash';
 import { ACStatusComponent } from './reports/acstatus';
 import { NewAircraftUnitComponent } from './amp/acs/units';
 import { MELsComponent } from './mel/mel';
-import { NewMELsComponent } from './mel/newmel';
+import { NewMELComponent } from './mel/newmel';
 
 @NgModule({
   declarations: [
