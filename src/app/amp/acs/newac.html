@@ -72,6 +72,7 @@
       <form>
         <div class="container">
           <div class="row">
+            <div class="col-md-6">
             <div class="form-group">
               <label>Current A/C Flight Hrs</label>
               <input type="text" class="form-control" />
@@ -103,10 +104,50 @@
             </div>
             
             <div class="form-group">
-              <label>Current A/C Flight Hrs</label>
+              <label>A/C Under Warranty</label>
               <input type="text" class="form-control" />
             </div>
-            
+              
+              <div class="form-group">
+              <label>TPED not compatible</label>
+              <input type="checkbox" class="form-control" />
+            </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>ETOPS</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>ETOPS Downgraded</label>
+                <input type="checkbox" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>RSVM</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>RSVM FL</label>
+                <input type="text" class="form-control" />
+              </div>
+              A/C Component Warranty
+              <div class="form-group">
+                <label>Vendor</label>
+                <input type="checkbox" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Hrs</label>
+                <input type="checkbox" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Cycles</label>
+                <input type="checkbox" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Days</label>
+                <input type="checkbox" class="form-control" />
+              </div>
+            </div>
           </div>
           <br>
           <br>
@@ -139,7 +180,7 @@
               </div>
               
             </div>
-            div class="col-md-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label>Last A/C Reg</label>   
                 <input class="form-control" type="text">
@@ -156,6 +197,10 @@
                 <label>Reg Date</label>   
                 <input class="form-control" type="text">
               </div>
+              <div class="form-group">
+                <label>Ownership Control</label>   
+                <input class="form-control" type="text">
+              </div>
               
             </div>
           </div>
@@ -164,7 +209,83 @@
       </form>
     </ng-template>
   </ngb-tab>
+      <ngb-tab title="Flight Status">
+        <ng-template ngbTabContent>
+          <form>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>In Service</label>
+                    <input class="form-control" type="checkbox">
+                  </div>
+                  <div class="form-group">
+                    <label>Out Of Service</label>
+                    <input class="form-control" type="checkbox">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+      </ng-template>
+  </ngb-tab>
+      
+  <ngb-tab title="Info 4">
+        <ng-template ngbTabContent>
+          <form class="form-inline">
+            <div class="container">
+              <div class="row">
+               Max Taxi Weight <input type="text"> Units <input type="text">
+                &nbsp;
+                Fuel Capacity <input type="text"> Units <input type="text">
+                &nbsp;
+                BOAW1 Value <input type="text">
+                &nbsp;
+                Freighter/PAX Cargo <input type="text">
+                &nbsp;
+                Winglet <input type="text">
+              </div>
+              <div class="row">
+                Max Landing Weight <input type="text"> Units <input type="text">
+                 &nbsp;
+                 Max T/O Weight <input type="text"> Units <input type="text">
+                &nbsp;
+                MAC Value <input type="text">
+                &nbsp;
+                Maximum Thrust <input type="text">
+                &nbsp;
+                Enhanced Cabin <input type="text">
+              </div>
+              <div class="row">
+                Max Zero Fuel Weight <input type="text"> Units <input type="text">
+                 &nbsp;
+                Basic Empty Weight <input type="text"> Units <input type="text">
+                &nbsp;
+                MAC Value <input type="text">
+                &nbsp;
+                ARM Value <input type="text">
+                &nbsp;
+                MMO <input type="text">
+                &nbsp;
+                Fleet Age <input type="text">
+              </div>
+              div class="row">
+                Operation Empty Weight <input type="text"> Units <input type="text">
+                 &nbsp;
+                Total Weight <input type="text"> Units <input type="text">
+                &nbsp;
+                OEW Value <input type="text">
+                &nbsp;
+                Maximum Cruising Altitude <input type="text">
+               
+               
+              </div>
+            </div>
+          </form>
+        </ng-template>
+    </ng-tab>
 </ngb-tabset>
+    
     
     
     
