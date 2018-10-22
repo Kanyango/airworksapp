@@ -60,6 +60,7 @@ import { NewRouteComponent } from './routes/newroute';
 import { EmpsComponent } from './emps/emps';
 import { NewEMPComponent } from './emps/newemp';
 import { TaskRevComponent } from './amp/tasks/rev';
+import { ToolsComponent } from './tools/tools';
 
 @NgModule({
   declarations: [
@@ -110,7 +111,8 @@ import { TaskRevComponent } from './amp/tasks/rev';
     NewRouteComponent,
     EmpsComponent,
     NewEMPComponent,
-    TaskRevComponent
+    TaskRevComponent,
+    ToolsComponent
     
   ],
   imports: [
