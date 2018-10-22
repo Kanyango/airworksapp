@@ -1,1 +1,147 @@
 
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">New MEL</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <ngb-tabset>
+  <ngb-tab title="General">
+    <ng-template ngbTabContent>
+    
+      <form>
+        <div class="container">
+          <div class="row">
+            <div style="display: inline-block;">
+              <label>A/C Series</label>
+              <input>
+            </div>
+            <div style="display: inline-block;">
+              <label>MEL No.</label>
+              <input>
+            </div>
+            <div style="display: inline-block;">
+              <label>Revision</label>
+              <input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label>Description</label>
+              <input>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div style="display: inline-block;">
+              <label>Chapter</label>
+              <input>
+            </div>
+            <div style="display: inline-block;">
+              <label>Section</label>
+              <input>
+            </div>
+            <div style="display: inline-block;">
+              <label>Paragraph</label>
+              <input>
+            </div>
+            <div style="display: inline-block;">
+              <label>Defer Category</label>
+              <input>
+            </div>
+            <div style="display: inline-block;">
+              <label>Defer</label>
+              <input>
+            </div>
+          </div>
+          <div class="row">
+             <div style="display: inline-block;">
+              <label>CAT</label>
+              <input>
+            </div>
+            <div style="display: inline-block;">
+              <label>CAT Rating</label>
+              <input>
+            </div>
+            <div style="display: inline-block;">
+              <label>RSVM</label>
+              <input type="checkbox">
+            </div>
+          </div>
+          <div class="row">
+            <div style="display: inline-block;">
+              <label>EW</label>
+              <input type="checkbox">
+            </div>
+            <div style="display: inline-block;">
+              <label>Autoland Restriction</label>
+              <input type="checkbox">
+            </div>
+            <div style="display: inline-block;">
+              <label>Dispatch Concurrence</label>
+              <input type="checkbox">
+            </div>
+            <div style="display: inline-block;">
+              <label>Operation Restriction</label>
+              <input type="checkbox">
+            </div>
+            <div style="display: inline-block;">
+              <label>ETOPS Restriction</label>
+              <input type="checkbox">
+            </div>
+            <div style="display: inline-block;">
+              <label>Pax Conv Restriction</label>
+              <input type="checkbox">
+            </div>
+            <div style="display: inline-block;">
+              <label>Maintenance Restriction</label>
+              <input type="checkbox">
+            </div>
+            <div style="display: inline-block;">
+              <label>ECTM</label>
+              <input type="checkbox">
+            </div>
+            <div style="display: inline-block;">
+              <label>Day Of Discovery</label>
+              <input type="checkbox">
+            </div
+            <div style="display: inline-block;">
+              <label>Include Defect Soft Warning</label>
+              <input type="checkbox">
+            </div>
+          </div>
+        </div>
+        </div>
+      </form>
+    
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle>Alerts</ng-template>
+    <ng-template ngbTabContent>
+      <form>
+        <div class="form-group">
+          <label>Level</label>
+          <input />
+          <input>
+        </div>
+        <div class="form-group">
+          <label>Flight Hours</label>
+          <input />
+          <input>
+        </div>
+        
+      </form>
+    </ng-template>
+  </ngb-tab> 
+ </ngb-tabset>
+    
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
+
+<button class="btn btn-lg btn-primary" (click)="open(content)">add units</button>
