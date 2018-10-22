@@ -33,6 +33,8 @@ import { ACStatusComponent } from './reports/acstatus';
 import { MELsComponent } from './mel/mel';
 import { RoutesComponent } from './routes/routes';
 //import { NewRouteComponent } from './routes/newroute';
+import { EmpsComponent } from './emps/emps';
+
 
 const routes: Routes = 
         [
@@ -67,7 +69,8 @@ const routes: Routes =
             { path: 'invdash', component: DashInventoryComponent },
             { path: 'acstatus', component: ACStatusComponent },
             { path: 'mels', component: MELsComponent },
-            { path: 'routes', component: RoutesComponent }
+            { path: 'routes', component: RoutesComponent },
+            { path: 'emps', component: EmpsComponent }
         ];
 
 @NgModule({
