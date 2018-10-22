@@ -31,7 +31,8 @@ import { LoginComponent } from './login/login';
 import { DashInventoryComponent } from './inventory/dash/dash';
 import { ACStatusComponent } from './reports/acstatus';
 import { MELsComponent } from './mel/mel';
-
+import { RoutesComponent } from './routes/routes';
+//import { NewRouteComponent } from './routes/newroute';
 
 const routes: Routes = 
         [
@@ -65,7 +66,8 @@ const routes: Routes =
             { path: 'delay', component: DelayComponent },
             { path: 'invdash', component: DashInventoryComponent },
             { path: 'acstatus', component: ACStatusComponent },
-            { path: 'mels', component: MELsComponent }
+            { path: 'mels', component: MELsComponent },
+            { path: 'routes', component: RoutesComponent }
         ];
 
 @NgModule({
