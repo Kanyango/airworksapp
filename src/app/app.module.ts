@@ -56,6 +56,10 @@ import { NewMELComponent } from './mel/newmel';
 import { RoutesComponent } from './routes/routes';
 import { NewRouteComponent } from './routes/newroute';
 
+
+import { EmpsComponent } from './emps/emps';
+import { NewEMPComponent } from './emps/newemp';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -102,7 +106,10 @@ import { NewRouteComponent } from './routes/newroute';
     MELsComponent,
     NewMELComponent,
     RoutesComponent,
-    NewRouteComponent
+    NewRouteComponent,
+    EmpsComponent,
+    NewEmpsComponent
+    
   ],
   imports: [
     BrowserModule,
