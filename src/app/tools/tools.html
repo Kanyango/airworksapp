@@ -1,1 +1,58 @@
 
+<navbar-component></navbar-component> 
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10">
+            <return-component></return-component>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label>Tool S/N</label>&nbsp;
+                            <input class="form-control">
+                        </div>
+                        &nbsp;&nbsp;
+                        <button class="btn btn-success" type="button">
+                            search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="list-group">
+                <div *ngFor="let one of parts"  class="list-group-item list-group-item-action flex-column align-items-start ">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">Description: {{ one.desc }}</h5>
+                      <small>Part No: {{ one.pn }}</small>
+                        <small>Units in Stock {{ one.units_in_stock }}</small>
+<!--
+                       <button class="btn btn-info" type="button">
+                        issue
+                       </button>
+-->
+                    </div>
+                    <p class="mb-1">Location: {{ one.location }}</p>
+                    <small>Manufacturer.</small>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br>
+<br>
+<br>
