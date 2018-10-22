@@ -242,8 +242,9 @@
                 
               </div>
             </div>
-           </div>
-          </form>
+           </form>
+           
+          
           </ng-template>
       </ngb-tab>
       
@@ -251,6 +252,7 @@
         <ng-template ngbTabContent>
           <form class="form-inline">
             <div class="container">
+                
               <div class="row">
                Max Taxi Weight <input type="text"> Units <input type="text">
                 &nbsp;
@@ -262,6 +264,7 @@
                 &nbsp;
                 Winglet <input type="text">
               </div>
+                
               <div class="row">
                 Max Landing Weight <input type="text"> Units <input type="text">
                  &nbsp;
@@ -273,6 +276,7 @@
                 &nbsp;
                 Enhanced Cabin <input type="text">
               </div>
+                
               <div class="row">
                 Max Zero Fuel Weight <input type="text"> Units <input type="text">
                  &nbsp;
@@ -286,6 +290,7 @@
                 &nbsp;
                 Fleet Age <input type="text">
               </div>
+                
               <div class="row">
                 Operation Empty Weight <input type="text"> Units <input type="text" />
                  &nbsp;
@@ -296,10 +301,12 @@
                 Maximum Cruising Altitude <input type="text" />
               </div>
               
-            </div>
+              </div>
+            
           </form>
+        
         </ng-template>
-    </ng-tab>
+      </ngb-tab>
       
     <ngb-tab title="Info 5">
         <ng-template ngbTabContent>
@@ -336,7 +343,7 @@
             </div>
           </form>
         </ng-template>
-      </ng-tab>
+      </ngb-tab>
     </ngb-tabset>
   </div>
   
@@ -352,3 +359,4 @@
 <button class="btn btn-outline-primary float-right" (click)="open(content)">
     new aircraft
 </button>
+
