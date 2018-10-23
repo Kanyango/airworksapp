@@ -61,6 +61,7 @@ import { EmpsComponent } from './emps/emps';
 import { NewEMPComponent } from './emps/newemp';
 import { TaskRevComponent } from './amp/tasks/rev';
 import { ToolsComponent } from './tools/tools';
+import { NewWKDComponent } from './amp/wkods/newkod';
 
 @NgModule({
   declarations: [
@@ -112,7 +113,8 @@ import { ToolsComponent } from './tools/tools';
     EmpsComponent,
     NewEMPComponent,
     TaskRevComponent,
-    ToolsComponent
+    ToolsComponent,
+    NewWKDComponent 
     
   ],
   imports: [
