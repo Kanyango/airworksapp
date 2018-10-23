@@ -35,6 +35,7 @@ import { RoutesComponent } from './routes/routes';
 //import { NewRouteComponent } from './routes/newroute';
 import { EmpsComponent } from './emps/emps';
 import { ToolsComponent } from './tools/tools';
+import { NewTaskComponent } from './amp/tasks/newtask';
 
 
 const routes: Routes = 
@@ -72,7 +73,8 @@ const routes: Routes =
             { path: 'mels', component: MELsComponent },
             { path: 'routes', component: RoutesComponent },
             { path: 'emps', component: EmpsComponent },
-          { path: 'tools', component: ToolsComponent }
+          { path: 'tools', component: ToolsComponent },
+           { path: 'newtaskcard', component: NewTaskComponent }
         ];
 
 @NgModule({
