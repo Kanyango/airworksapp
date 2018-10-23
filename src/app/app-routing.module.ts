@@ -79,7 +79,7 @@ const routes: Routes =
             { path: 'newtaskcard', component: NewTaskComponent },
             { path: 'neworkorder', component: NewWKDComponent },
             { path: 'apu/readings', component: APUComponent },
-            { path: 'new/apu/readings', component: NewAPUComponent }
+            { path: 'new_apu_readings', component: NewAPUComponent }
         ];
 
 @NgModule({
