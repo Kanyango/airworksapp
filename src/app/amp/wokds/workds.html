@@ -4,182 +4,45 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <ngb-tabset>
-  <ngb-tab title="General">
-    <ng-template ngbTabContent>
-        <br>
+          <a class="btn btn-outline-primary" routerLink="/neworkorder"> new work order </a>
+        `</div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
         
-      <form>
-          <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label>Work Order No</label>  
-                    <input class="form-control">
-                </div>  
-                <div class="form-group">
-                    <label>Status</label>  
-                    <input class="form-control">
-                </div>  
-                <div class="form-group">
-                    <label>Description</label>  
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Location</label>  
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Schedule Start Date</label>  
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Schedule End Date</label>  
-                    <input class="form-control">
-                </div>
-            </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                    <label>A/C</label>  
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>A/C S/N</label>  
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Location</label>  
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Priority</label>  
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Actual Start Date</label>  
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Actual End Date</label>  
-                    <input class="form-control">
-                </div>
-                  <button class="btn btn-info btn-lg float-right" type="button">Next</button>
-              </div>
-          </div>
-             
-      </form>
-        <br>
-        <br>
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab>
-    <ng-template ngbTabTitle>Quality</ng-template>
-    <ng-template ngbTabContent>
-        
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <form>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6 offset-md-3">
-                                    <form>
-                                        <div class="form-group">
-                                            <label>Mechanic Inspector</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Total Engine Hours</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Total APU Hours</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Comments</label>
-                                            <input class="form-control">
-                                        </div>
-                                        <br>
-                                        
-                                        <button class="btn btn-info btn-lg float-right" type="button">Next</button>
-                                    </form>
-                                </div>
-                            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Work Orders</h3>
+                    <hr>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input class="form-control"/>  
                         </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <button class="btn btn-success" type="button">Search</button>
                     </form>
+                    &nbsp;
+                    &nbsp;
+                    <div class="list-group">
+                      <div *ngFor="let one of tasks" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Aircraft : {{ one.ac }}</h5>
+                          <h5 class="mb-1">Task NO : {{ one.task_no }}</h5>
+                          <small>Action : {{ one.action }}</small>
+                          <rev-component></rev-component>
+                        </div>
+                        <p class="mb-1">Description: {{ one.desc }}</p>
+                        <small>Period: {{ one.period }}</small>
+                      </div>
+                      
+                    </div>
                 </div>
             </div>
-        </div>
-      
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab title="Material Requisition" >
-    <ng-template ngbTabContent>
-        <br>
-      <form>
-        <div class="container">
-            <div class="row" style="background-color: #E0E0E0; padding: 10PX;">
-                <div class="col-md-4" >
-                    <div class="form-group">
-			  			<label>Status</label>
-			  			<input class="form-control">
-			  		</div>
-			  		<div class="form-group">
-			  			<label>Priority</label>
-			  			<input class="form-control">
-			  		</div>
-			  		<div class="form-group">
-			  			<label>Type</label>
-			  			<input class="form-control">
-			  		</div>
-			  		<div class="form-group">
-			  			<label>A/C</label>
-			  			<input class="form-control">
-			  		</div>
-                </div>
-                <div class="col-md-4" >
-			  		<div class="form-group">
-			  			<label>ATA Chapter</label>
-			  			<input class="form-control">
-			  		</div>
-			  		<div class="form-group">
-			  			<label>P/N</label>
-			  			<input class="form-control">
-			  		</div>
-			  		<div class="form-group">
-			  			<label>UOM</label>
-			  			<input class="form-control">
-			  		</div>
-                </div>
-                <div class="col-md-4" >
-			  		<div class="form-group">
-			  			<label>RQRD QTTY</label>
-			  			<input class="form-control">
-			  		</div>
-			  		<div class="form-group">
-			  			<label>ORDRD</label>
-			  			<input class="form-control">
-			  		</div>
-			  		<div class="form-group">
-			  			<label>RCVD QTTY</label>
-			  			<input class="form-control">
-			  		</div>
-                </div>
-            </div>  
-        </div>  
-      </form>
-        <br>
-        <button class="btn btn-info btn-lg float-right" type="button">Next</button>
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab title="Task Cards">
-    <ng-template ngbTabContent>
-      <br>
-        <addtask-component></addtask-component>
-    </ng-template>
-  </ngb-tab>
-</ngb-tabset>
         </div>
     </div>
 </div>
