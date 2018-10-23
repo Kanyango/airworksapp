@@ -1,1 +1,55 @@
 
+<navbar-component></navbar-component>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <a routerLink="/newaclog" class="btn btn-outline-primary float-right" type="button">
+                new flight log
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title"> APU Readings </h3>
+                    <hr>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="search aircraft"/>
+                            &nbsp;&nbsp;
+                            <button class="btn btn-success" type="button">
+                                search
+                            </button>
+                        </div>
+                    </form>
+                    <br>
+                   
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action flex-column align-items-start " *ngFor="let one of flights">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">A/C : {{ one.ac }}</h5>
+                          <small>Flight Log: {{ one.flight_log }}</small>
+                            <a routerLink="/delay" class="btn btn-warning float-right" type="button">
+                                add delay
+                            </a>
+                            
+                        </div>
+                        <p class="mb-1">Flight Date: {{ one.flight_date }}</p>
+                        <small>A/C Origin: {{ one.origin }}</small> -
+                        <small>A/C Destn: {{ one.destination }}</small>
+                          <units-component></units-component><br><br>
+                          <a routerLink="/addecm" class="btn btn-success float-right" type="button">
+                                add ecm log
+                            </a>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
