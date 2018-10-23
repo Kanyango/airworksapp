@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-    selector: 'acflights-component',
-    templateUrl: './acflights.html'
+    selector: 'apu-component',
+    templateUrl: './apu.html'
 })
 
-export class ACFlightsComponent
+export class APUComponent
 {
     
     flights = [{ac: '0810', 
