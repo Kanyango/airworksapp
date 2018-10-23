@@ -118,25 +118,68 @@
                   <label>Element</label>
                   <input class="form-control"/>
                 </div>
-                <div class="form-group" style="display: inline-block">
+                <div class="form-group" >
                   <label>Description</label>
-                  <input class="form-control"/>
+                  <textarea class="form-control"></textarea>
                 </div>
+                <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                   <ngb-panel title="Parts">
+                      <ng-template ngbPanelContent>
+                        <div class="form-group" style="display: inline-block">
+                            <label>P/N</label>
+                            <input class="form-control"/>
+                          </div>
+                          <div class="form-group" style="display: inline-block">
+                            <label>qty</label>
+                            <input class="form-control"/>
+                          </div>
+                          <div class="form-group" style="display: inline-block">
+                            <label>Description</label>
+                            <input class="form-control"/>
+                          </div>
+                          <div class="form-group" style="display: inline-block">
+                            <label>Part type</label>
+                            <select class="form-control">
+                              <option value="spare">Spare</option>
+                              <option value="tool">Tool</option>
+                            </select>
+                          </div>
+                     </ng-template>
+                   </ngb-panel>
+                  <ngb-panel title="Panels">
+                      <ng-template ngbPanelContent>
+                        <div class="form-group" style="display: inline-block">
+                            <label>Panel</label>
+                            <input class="form-control"/>
+                          </div>
+                          <div class="form-group" style="display: inline-block">
+                            <label>Description</label>
+                            <input class="form-control"/>
+                          </div>
+                          <div class="form-group" style="display: inline-block">
+                            <label>Reference</label>
+                            <input class="form-control"/>
+                          </div>
+                     </ng-template>
+                   </ngb-panel>
+                  <ngb-panel title="Panels">
+                      <ng-template ngbPanelContent>
+                        <div class="form-group" style="display: inline-block">
+                            <label>Zone</label>
+                            <input class="form-control"/>
+                          </div>
+                          <div class="form-group" style="display: inline-block">
+                            <label>Description</label>
+                            <input class="form-control"/>
+                          </div>
+                          
+                     </ng-template>
+                   </ngb-panel>
+                </ngb-accordion>
               </div>
               
               <div class="row">
-                <div class="form-group" style="display: inline-block">
-                  <label>P/N</label>
-                  <input class="form-control"/>
-                </div>
-                <div class="form-group" style="display: inline-block">
-                  <label>qty</label>
-                  <input class="form-control"/>
-                </div>
-                <div class="form-group" style="display: inline-block">
-                  <label>Description</label>
-                  <input class="form-control"/>
-                </div>
+                
               </div>
               
              
@@ -158,99 +201,4 @@
 
 
 
-<ng-template #content let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">New Task Cards</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    
-    <ngb-tabset>
-      <ngb-tab title="1">
-        <ng-template ngbTabContent>
-          <form>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label>Task Card</label>
-                  <input class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Type</label>
-                  <input class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Category</label>
-                  <input class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Description</label>
-                  <input class="form-control">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label>Status</label>
-                  <input class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Revision</label>
-                  <input class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Revised By</label>
-                  <input class="form-control">
-                  </div>
-                  <div class="form-group">
-                  <label>Revised Date</label>
-                  <input class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Chapter</label>
-                  <input class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Section</label>
-                  <input class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Category</label>
-                  <input class="form-control">
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-          </ng-template>
-      </ngb-tab>
-  <ngb-tab>
-    <ng-template ngbTabTitle>Task Card Items</ng-template>
-    <ng-template ngbTabContent>
-      <form>
-        <div  class="container">
-          <div class="row">
-            
-          </div>
-        </div>
-      </form>
-      
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab title="Disabled" [disabled]="true">
-    <ng-template ngbTabContent>
-    </ng-template>
-  </ngb-tab> 
-</ngb-tabset>
-    
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
-        add 
-    </button>
-  </div>
-</ng-template>
 
-<button class="btn btn-lg btn-outline-primary float-right" (click)="open(content)">add task card</button>
