@@ -61,7 +61,7 @@ import { EmpsComponent } from './emps/emps';
 import { NewEMPComponent } from './emps/newemp';
 import { TaskRevComponent } from './amp/tasks/rev';
 import { ToolsComponent } from './tools/tools';
-import { NewWKDComponent } from './amp/wkods/newkod';
+import { NewWKDComponent } from './amp/wokds/newkod';
 
 @NgModule({
   declarations: [
