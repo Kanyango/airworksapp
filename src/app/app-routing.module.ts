@@ -36,7 +36,7 @@ import { RoutesComponent } from './routes/routes';
 import { EmpsComponent } from './emps/emps';
 import { ToolsComponent } from './tools/tools';
 import { NewTaskComponent } from './amp/tasks/newtask';
-import { NewWKDComponent } from './amp/wkods/newkod';
+import { NewWKDComponent } from './amp/wokds/newkod';
 
 const routes: Routes = 
         [
