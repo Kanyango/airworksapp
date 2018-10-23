@@ -62,6 +62,8 @@ import { NewEMPComponent } from './emps/newemp';
 import { TaskRevComponent } from './amp/tasks/rev';
 import { ToolsComponent } from './tools/tools';
 import { NewWKDComponent } from './amp/wokds/newkod';
+import { NewAPUComponent } from './tech/apu/newapu';
+import { APUComponent } from './tech/apu/apu';
 
 @NgModule({
   declarations: [
@@ -114,7 +116,9 @@ import { NewWKDComponent } from './amp/wokds/newkod';
     NewEMPComponent,
     TaskRevComponent,
     ToolsComponent,
-    NewWKDComponent 
+    NewWKDComponent,
+    NewAPUComponent,
+    APUComponent
     
   ],
   imports: [
