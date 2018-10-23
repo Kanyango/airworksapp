@@ -78,8 +78,7 @@ const routes: Routes =
             { path: 'tools', component: ToolsComponent },
             { path: 'newtaskcard', component: NewTaskComponent },
             { path: 'neworkorder', component: NewWKDComponent },
-            { path: 'apu/readings', component: APUComponent },
-            { path: 'new_apu_readings', component: NewAPUComponent }
+            { path: 'apu/readings', component: APUComponent }
         ];
 
 @NgModule({
