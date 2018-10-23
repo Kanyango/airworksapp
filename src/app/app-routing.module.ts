@@ -37,6 +37,8 @@ import { EmpsComponent } from './emps/emps';
 import { ToolsComponent } from './tools/tools';
 import { NewTaskComponent } from './amp/tasks/newtask';
 import { NewWKDComponent } from './amp/wokds/newkod';
+import { NewAPUComponent } from './tech/apu/newapu';
+import { APUComponent } from './tech/apu/apu';
 
 const routes: Routes = 
         [
@@ -73,9 +75,11 @@ const routes: Routes =
             { path: 'mels', component: MELsComponent },
             { path: 'routes', component: RoutesComponent },
             { path: 'emps', component: EmpsComponent },
-          { path: 'tools', component: ToolsComponent },
-           { path: 'newtaskcard', component: NewTaskComponent },
-          { path: 'neworkorder', component: NewWKDComponent }
+            { path: 'tools', component: ToolsComponent },
+            { path: 'newtaskcard', component: NewTaskComponent },
+            { path: 'neworkorder', component: NewWKDComponent },
+            { path: 'apu/readings', component: APUComponent },
+            { path: 'new/apu/readings', component: NewAPUComponent }
         ];
 
 @NgModule({
