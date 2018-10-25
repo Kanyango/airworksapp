@@ -9,15 +9,9 @@
           <h3 class="card-title">Receiving P/O</h3>
           <br>
           <ngb-tabset>
-              <ngb-tab title="General">
-                <ng-template ngbTabContent>
-                  
-                  
-                
-                </ng-template>
-              </ngb-tab>
+            
               <ngb-tab>
-                <ng-template ngbTabTitle>Warranty</ng-template>
+                <ng-template ngbTabTitle>General</ng-template>
                 <ng-template ngbTabContent>
                   <form>
                     <div class="container">
@@ -276,19 +270,12 @@
                         
                         <div class="col-md-6 offset-md-3">
                           <div class="form-group">
-                            <label>Hrs</label>
+                            <label>From P/N</label>
                             <input class="form-control" />
                           </div>
-                           <div class="form-group">
-                            <label>Cycles</label>
-                            <input class="form-control" />
-                          </div>
-                           <div class="form-group">
-                            <label>Days<label>
-                            <input class="form-control" />
-                          </div>
+                          
                          <div class="form-group">
-                            <label>P/N Birth Date<label>
+                            <label>To P/N<label>
                             <input class="form-control" />
                           </div>
                          
@@ -301,7 +288,88 @@
               </ngb-tab>
               <ngb-tab title="Discrepancy">
                 <ng-template ngbTabContent>
-                
+                  <form>
+                    <div class="container">
+                      <div class="row">
+                        
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Line</label>
+                            <input class="form-control" />
+                          </div>
+                           <div class="form-group">
+                            <label>Description</label>
+                            <input class="form-control" />
+                          </div>
+                           <div class="form-group">
+                            <label>Status</label>
+                            <input class="form-control" />
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Received Date</label>
+                            <input class="form-control" />
+                          </div>
+                           <div class="form-group">
+                            <label>Location</label>
+                            <input class="form-control" />
+                          </div>
+                           <div class="form-group">
+                            <label>Bin</label>
+                            <input class="form-control" />
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Buyer</label>
+                            <input class="form-control" />
+                          </div>
+                           <div class="form-group">
+                            <label>P/N</label>
+                            <input class="form-control" />
+                          </div>
+                           <div class="form-group">
+                            <label>S/N</label>
+                            <input class="form-control" />
+                          </div>
+                          <div class="form-group">
+                            <label>UOM</label>
+                            <input class="form-control" />
+                          </div>
+                                                       
+                          <div class="form-group">
+                            <label>Description</label>
+                            <textarea class="form-control" ></textarea>
+                          </div>
+                        </div>
+                     
+                        
+                      </div>
+                         <div class="row">
+                               <div class="col-md-12">
+                           <div class="form-group row">
+                            <label>Vendor</label>
+                            <input class="form-control" >
+                          </div>
+                          <div class="form-group row">
+                            <label>Category</label>
+                            <input class="form-control" >
+                          </div>
+                          <div class="form-group row">
+                            <label>AWB</label>
+                            <input class="form-control" >
+                          </div>
+                          <div class="form-group row">
+                            <label>Reason</label>
+                            <textarea class="form-control" ></textarea>
+                          </div>
+                              </div>
+                           </div>
+                    </div>
+                  </form>
                 </ng-template>
               </ngb-tab>
           </ngb-tabset>
