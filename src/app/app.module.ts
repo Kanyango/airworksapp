@@ -66,6 +66,7 @@ import { NewAPUComponent } from './tech/apu/newapu';
 import { APUComponent } from './tech/apu/apu';
 import { NewInvPartComponent  } from './inventory/newpart';
 import { NewPOComponent  } from './orders/newpo';
+import { ReceeiveComponent  } from './receive/receive';
 
 @NgModule({
   declarations: [
@@ -122,7 +123,8 @@ import { NewPOComponent  } from './orders/newpo';
     NewAPUComponent,
     APUComponent,
     NewInvPartComponent,
-    NewPOComponent
+    NewPOComponent,
+    ReceeiveComponent
     
   ],
   imports: [
