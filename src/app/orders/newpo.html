@@ -186,8 +186,8 @@
            </ngb-accordion>
             
             
-            <ngb-tabset>
-              <ngb-tab title="Order Item 1">
+             <ngb-accordion #acc="ngbAccordion2" activeIds="ngb-panel-0">
+              <ngb-panel title="Order Item 1">
                 <ng-template ngbTabContent>
             <div class="container">
               
@@ -288,12 +288,12 @@
                 
             </div>
                   
-                  </ngb-tab>
+                  </ngb-panel>
                 
              </ng-template>
               
               
-            </ngb-tabset>
+            </ngb-accordion>
             
           </form>
         </div>
