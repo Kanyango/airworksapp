@@ -65,6 +65,7 @@ import { NewWKDComponent } from './amp/wokds/newkod';
 import { NewAPUComponent } from './tech/apu/newapu';
 import { APUComponent } from './tech/apu/apu';
 import { NewInvPartComponent  } from './inventory/newpart';
+import { NewPOComponent  } from './orders/newpo';
 
 @NgModule({
   declarations: [
@@ -120,7 +121,8 @@ import { NewInvPartComponent  } from './inventory/newpart';
     NewWKDComponent,
     NewAPUComponent,
     APUComponent,
-    NewInvPartComponent
+    NewInvPartComponent,
+    NewPOComponent
     
   ],
   imports: [
