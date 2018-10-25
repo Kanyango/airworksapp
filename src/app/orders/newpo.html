@@ -10,7 +10,108 @@
           <h3 class="card-title">New Purchase Order</h3>
           <hr>
           <form>
-           
+
+            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+               <ngb-panel title="Header">
+                  <ng-template ngbPanelContent>
+                    
+                    <ngb-tabset>
+                      <ngb-tab title="Tab 1">
+                        <ng-template ngbTabContent>
+                    
+                          <div class="container">
+                            <div class="row">
+                              
+                              <div class="col-md-4">
+                                 <div class="form-group">
+                                      <label>Ship Location</label>
+                                      <input class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Bill To</label>
+                                    <input class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Priority</label>
+                                    <input class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Currency</label>
+                                    <input class="form-control">
+                                  </div>
+                                <div class="form-group">
+                                      <label>Vendor</label>
+                                      <input class="form-control">
+                                  </div>
+                              </div>
+                            
+                              <div class="col-md-4">
+                                 
+                                  <div class="form-group">
+                                    <label>Attention</label>
+                                    <input class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>F.O.B</label>
+                                    <input class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Confirmation</label>
+                                    <input class="form-control">
+                                  </div>
+                                 <div class="form-group">
+                                      <label>Amdt</label>
+                                      <input class="form-control">
+                                  </div>
+                                 <div class="form-group">
+                                    <label>Terms</label>
+                                    <input class="form-control">
+                                  </div>
+                              </div>
+                              
+                               <div class="col-md-4">
+                                
+                                  <div class="form-group">
+                                    <label>Customer P.O</label>
+                                    <input class="form-control">
+                                  </div>
+                                 
+                                  <div class="form-group">
+                                    <label>Ship Via</label>
+                                    <input class="form-control">
+                                  </div>
+                                 <div class="form-group">
+                                    <label>Ship Via</label>
+                                    <input class="form-control">
+                                  </div>
+                                 <div class="form-group">
+                                    <label>Ship Account</label>
+                                    <input class="form-control">
+                                  </div>
+                                 <div class="form-group">
+                                    <label>Ship Remarks</label>
+                                    <input class="form-control">
+                                  </div>
+                                 <div class="form-group">
+                                    <label>Issued By</label>
+                                    <input class="form-control">
+                                  </div>
+                              </div>
+
+                              
+                              
+                            </div>
+                          </div>
+                          
+                        </ngb-tabset>
+                     </ngb-tab>
+                  </ng-template>
+                  
+                </ng-template>
+              </ngb-panel>
+           </ngb-accordion>
+            
+            
             <ngb-tabset>
               <ngb-tab title="Order Item 1">
                 <ng-template ngbTabContent>
