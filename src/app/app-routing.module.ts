@@ -39,6 +39,7 @@ import { NewTaskComponent } from './amp/tasks/newtask';
 import { NewWKDComponent } from './amp/wokds/newkod';
 import { NewAPUComponent } from './tech/apu/newapu';
 import { APUComponent } from './tech/apu/apu';
+import { NewInvPartComponent  } from './inventory/newpart';
 
 const routes: Routes = 
         [
@@ -78,7 +79,8 @@ const routes: Routes =
             { path: 'tools', component: ToolsComponent },
             { path: 'newtaskcard', component: NewTaskComponent },
             { path: 'neworkorder', component: NewWKDComponent },
-            { path: 'apu/readings', component: APUComponent }
+            { path: 'apu/readings', component: APUComponent },
+            { path: 'pn_initial_entry', component: NewInvPartComponent }
         ];
 
 @NgModule({
