@@ -12,10 +12,10 @@ export class DashInventoryComponent
     id = '';
     constructor(private route: ActivatedRoute){}
     
-    ngOnInit()
+    /*ngOnInit()
      {
         this.id = this.route.snapshot.paramMap.get('id');
         console.log('iam',this.id);
-     }
+     }*/
 
 }
