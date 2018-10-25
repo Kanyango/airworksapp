@@ -41,6 +41,7 @@ import { NewAPUComponent } from './tech/apu/newapu';
 import { APUComponent } from './tech/apu/apu';
 import { NewInvPartComponent  } from './inventory/newpart';
 import { NewPOComponent  } from './orders/newpo';
+import { ReceeiveComponent  } from './receive/receive';
 
 const routes: Routes = 
         [
@@ -82,7 +83,8 @@ const routes: Routes =
             { path: 'neworkorder', component: NewWKDComponent },
             { path: 'apu/readings', component: APUComponent },
             { path: 'newpart', component: NewInvPartComponent },
-            { path: 'newpo', component: NewPOComponent }
+            { path: 'newpo', component: NewPOComponent },
+          { path: 'receive', component: ReceeiveComponent }
         ];
 
 @NgModule({
