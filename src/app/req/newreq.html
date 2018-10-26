@@ -1,0 +1,90 @@
+<navbar-component></navbar-component>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">New Requistion</h3>
+          <hr>
+          
+          <form>
+            
+           <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+              <ngb-panel title="Requisition Header">
+                <ng-template ngbPanelContent>
+                
+                   <div class="container">
+                    <div class="row">
+                    
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Type</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Priority</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Location</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Site</label>
+                          <input class="form-control" />
+                        </div>
+                        
+                      </div>
+                      
+                      <div class="col-md-4">
+                      <div class="form-group">
+                          <label>Category</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Status</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Description</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>A/C</label>
+                          <input class="form-control" />
+                        </div>
+                        
+                      </div>
+                      
+                      <div class="col-md-4">
+                       <div class="form-group">
+                          <label>Defect</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>W/O</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Task Card</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                      
+                    </div>
+                   </div>
+                   
+                </ng-template>
+              </ngb-panel>
+           </ngb-accordion>
+           
+           
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
