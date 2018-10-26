@@ -11,7 +11,7 @@
           
           <form>
             
-           <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+           <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="ngb-panel-0">
               <ngb-panel title="Requisition Header">
                 <ng-template ngbPanelContent>
                 
@@ -78,6 +78,44 @@
                    
                 </ng-template>
               </ngb-panel>
+             
+             <ngb-panel title="Authorization">
+                <ng-template ngbPanelContent>
+                    
+                   <div class="container">
+                            <div class="row">
+                              <div class="col-md-6 offset-md-3">
+                                <div class="form-group">
+                                    <label>Authorization</label>
+                                    <input class="form-control" />
+                                 </div>
+                                <div class="form-group">
+                                    <label>Auth By</label>
+                                    <input class="form-control" />
+                                 </div>
+                                <div class="form-group">
+                                    <label>Auth Date</label>
+                                    <input class="form-control" />
+                                 </div>
+                                 <div class="form-group">
+                                    <label>Assign To</label>
+                                    <input class="form-control" />
+                                 </div>
+                                 <div class="form-group">
+                                    <label>Rejection</label>
+                                    <input class="form-control" />
+                                 </div>
+                                 <div class="form-group">
+                                    <label>Rejection Reason</label>
+                                    <input class="form-control" />
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                  
+                </ng-template>
+             </ngb-panel>
+             
              <br>
              <button class="btn btn-success" type="button">Add P/N</button>
              <br>
