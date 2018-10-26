@@ -78,6 +78,86 @@
                    
                 </ng-template>
               </ngb-panel>
+             <br>
+             <button class="btn btn-success" type="button">Add P/N</button>
+             <br>
+             <ngb-panel title="Requisition Header">
+                <ng-template ngbPanelContent>
+                  
+                  <ngb-tabset>
+                      <ngb-tab title="P/N Details">
+                        <ng-template ngbTabContent>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>P/N</label>
+                                    <input class="form-control" />
+                                 </div>
+                                <div class="form-group">
+                                    <label>P/N Desc</label>
+                                    <input class="form-control" />
+                                 </div>
+                                <div class="form-group">
+                                    <label>Condition</label>
+                                    <input class="form-control" />
+                                 </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Date Requird</label>
+                                    <input class="form-control" />
+                                 </div>
+                                <div class="form-group">
+                                    <label>Qtty</label>
+                                    <input class="form-control" />
+                                 </div>
+                                <div class="form-group">
+                                    <label>UOM</label>
+                                    <input class="form-control" />
+                                 </div>
+                              </div>
+                              
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Preferrd Vendor</label>
+                                    <input class="form-control" />
+                                 </div>
+                                <div class="form-group">
+                                    <label>Qty ORD</label>
+                                    <input class="form-control" />
+                                 </div>
+                                <div class="form-group">
+                                    <label>RCVD QTY</label>
+                                    <input class="form-control" />
+                                 </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                          
+                        </ng-template>
+                      </ngb-tab>
+                      <ngb-tab>
+                        <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
+                        <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                          <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                          craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+                          cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+                          yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+                          shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+                          sint qui sapiente accusamus tattooed echo park.</p>
+                        </ng-template>
+                      </ngb-tab>
+                      <ngb-tab title="Disabled" [disabled]="true">
+                        <ng-template ngbTabContent>
+                          <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
+                        </ng-template>
+                      </ngb-tab>
+                    </ngb-tabset>
+                    
+                  </ng-template>
+              </ngb-panel>
            </ngb-accordion>
            
            
