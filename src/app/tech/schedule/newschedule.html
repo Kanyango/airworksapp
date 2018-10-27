@@ -7,7 +7,7 @@
             <div class="card-body">
                 <h3 class="card-title">New Flight Schedule</h3>
                 <hr>
-            <form>
+            <form [formGroup]="newSchedForm" (ngSubmit)="onSubmit()">
                 
                 <div class="row">
                     
