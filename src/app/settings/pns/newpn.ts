@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Alerts } from '.../services/models';
+import { Alerts } from '../../services/models';
  
 @Component({
     selector: 'newpn-component',
