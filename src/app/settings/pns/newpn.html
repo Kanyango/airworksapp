@@ -209,7 +209,7 @@
                             <form>
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-8 offset-md-2">
                                         
                                         <div class="form-group"> 
                                             <label>Reliability Monitored</label>
@@ -234,22 +234,12 @@
                                             <label>Nof Days</label>
                                             <input type="text" class="form-control" formControlName="no_days">
                                         </div>
-                                    
                                         
-                                        <div class="form-group">
-                                            <label>Chapter</label>
-                                            <input type="text" class="form-control" formControlName="chapter">
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <label>Section</label>
-                                            <input type="text" class="form-control" formControlName="sec">
-                                        </div>
-                                        
-                                        <div>
-                                            <label>Par</label>
-                                            <input type="text" class="form-control" formControlName="par">
-                                        </div>
+                                      <button class="btn btn-warning" type="button" (click)="addAlert()">
+                                        add Alert
+                                      </button>
+                                      
+                                      
                                     </div>
                                 </div>
                             </div>
