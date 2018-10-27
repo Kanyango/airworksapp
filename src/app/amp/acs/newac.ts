@@ -35,7 +35,7 @@ export class NewAircraftComponent {
         amp : ['', Validators.required],
         revision : ['', Validators.required],
         date : ['', Validators.required],
-      ` curr_ac_flight_hrs : ['', Validators.required],
+         curr_ac_flight_hrs : ['', Validators.required],
         block_hrs : ['', Validators.required],
         ac_cycles : ['', Validators.required],
         rin : ['', Validators.required],
