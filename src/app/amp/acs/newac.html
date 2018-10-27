@@ -8,7 +8,119 @@
         <div class="card-body">
           <h3 class="card-title">New Aircraft Card</h3>
           <hr>
-          <div class=""></div>
+          
+          <form>
+            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+              <ngb-panel title="General">
+                <ng-template ngbPanelContent>
+                  
+                  <div class="container">
+                    <div class="row">
+                      
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Status</label>
+                          <select class="form-control">
+                            <option class="active">Active</option>
+                             <option class="inactive">Inactive</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>A/C</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>S/N</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Type</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Series</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>No Of Engines</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Build Date</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>EOL Date</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>EOL Hrs</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>EOL Cycles</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Auth No</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>AMM</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>AMP</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Revision</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Date</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                    
+                      
+                    </div>
+                  </div>
+                  
+                </ng-template>
+              </ngb-panel>
+              <ngb-panel>
+                <ng-template ngbPanelTitle>
+                  <span>&#9733; <b>Fancy</b> title &#9733;</span>
+                </ng-template>
+                <ng-template ngbPanelContent>
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                  aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                  craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                  labore sustainable VHS.
+                </ng-template>
+              </ngb-panel>
+              <ngb-panel title="Disabled" [disabled]="true">
+                <ng-template ngbPanelContent>
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+                  aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                  craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                  labore sustainable VHS.
+                </ng-template>
+              </ngb-panel>
+            </ngb-accordion>
+          </form>
+          
         </div>
       </div>
     </div>
