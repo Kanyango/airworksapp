@@ -83,5 +83,10 @@ export class NewAircraftComponent {
         first_revenue_date : ['', Validators.required]
     })
   }
+
+  onSubmit()
+  {
+    console.log(this.newAcForm.value);
+  }
   
 }
