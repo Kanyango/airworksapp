@@ -104,7 +104,13 @@
                     <div class="row">
                       
                       <div class="col-md-4">
-                       
+                       <div class="form-group">
+                          <label>Flight Status</label>
+                          <select class="form-control">
+                            <option class="inservice">In Service</option>
+                             <option class="outservice">Out Of Service</option>
+                          </select>
+                        </div>
                         <div class="form-group">
                           <label>Current A/C Flight Hrs</label>
                           <input class="form-control" />
@@ -176,14 +182,90 @@
                   
                 </ng-template>
               </ngb-panel>
-              <ngb-panel title="Disabled" [disabled]="true">
+              <ngb-panel title="Disabled" >
                 <ng-template ngbPanelContent>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-                  aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                  craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                  labore sustainable VHS.
+                  
+                  <div class="container">
+                    <div class="row">
+                      
+                      <div class="col-md-4">
+                       
+                        <div class="form-group">
+                          <label>Max Taxi Weight</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Fuel Capacity</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>BOAWI Value</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Freighter PAX Cargo</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Weight</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Max Landing Weigt</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Max T/O Weight</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>MAC Value</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Maximum Thrust</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Enhanced Cabin</label>
+                          <input class="form-control" />
+                        </div>
+                        
+                      </div>
+                      
+                      <div class="col-md-4">
+                       
+                        <div class="form-group">
+                          <label>Max Zero Fuel Weight</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Basic Fuel Weight</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>ARM Value</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>AMO</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Fleet Age</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                    
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
                 </ng-template>
               </ngb-panel>
             </ngb-accordion>
