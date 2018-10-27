@@ -7,51 +7,51 @@
             <div class="card-body">
                 <h3 class="card-title">New Flight Log</h3>
                 <hr>
-            <form>
+            <form [formGroup]="flightLogForm" (ngSubmit)="onSubmit()">
                 <div class="row ">
                     <div class="col-md-3">
                         
                         <div class="form-group">
                             <label>A/C</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="ac" formControlName="ac" >
                         </div>
                         <div class="form-group">
                             <label>Flight Log</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="log" formControlName="log">
                         </div>
                         <div class="form-group">
                             <label>Leg</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="leg" formControlName="leg">
                         </div>
                         <div class="form-group">
                             <label>Flight Date</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="date" placeholder="date">
                         </div>
                         <div class="form-group">
                             <label>Off</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="off" formControlName="off">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>T/O</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="to" formControlName="to">
                         </div>
                         <div class="form-group">
                             <label>LNG</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="lng" formControlName="lng">
                         </div>
                         <div class="form-group">
                             <label>ON</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="on" formControlName="on">
                         </div>
                         <div class="form-group">
                             <label>Cycles</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="cycles" formControlName="cycles">
                         </div>
                         <div class="form-group">
                             <label>Pilot</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="pilot" formControlName="pilot">
                         </div>
                         
                         
@@ -59,45 +59,45 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Origin</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="origin" formControlName="origin">
                         </div>
                         <div class="form-group">
                             <label>Destination</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="destination" formControlName="destination">
                         </div>
                         <div class="form-group">
                             <label>Flight</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="flight" formControlName="flight">
                         </div>
                         <div class="form-group">
                             <label>Fuel Burned</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="fuel" formControlName="fuel">
                         </div>
-                        <div class="form-group">
+                       <!--<div class="form-group">
                             <label>Flight</label>
                             <input type="text" class="form-control" name="first-name" placeholder="First Name">
-                        </div>
+                        </div>-->
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
                             <label>Block</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="block" formControlName="block">
                         </div>
                         <div class="form-group">
                             <label>CAT Rating</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="cat_rating" formControlName="cat_rating">
                         </div>
                         <div class="form-group">
                             <label>ETOPS</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="etops" formControlName="etops">
                         </div>
                         <div class="form-group">
                             <label>FLT/HRS</label>
-                            <input type="text" class="form-control" name="first-name" placeholder="First Name">
+                            <input type="text" class="form-control" name="flight_hrs" formControlName="flight_hrs">
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-outline-success btn-lg float-right" type="button">
+                <button class="btn btn-outline-success btn-lg float-right" type="submit" [disabled]="flightLogForm.!valid">
                     save
                 </button>
                 <br>
