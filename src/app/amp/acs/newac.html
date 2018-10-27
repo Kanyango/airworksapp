@@ -35,57 +35,57 @@
                         </div>
                         <div class="form-group">
                           <label>Type</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="type"/>
                         </div>
                         <div class="form-group">
                           <label>Series</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="series"/>
                         </div>
                       </div>
                       
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>No Of Engines</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="no_of_engines"/>
                         </div>
                         <div class="form-group">
                           <label>Build Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="build_date"/>
                         </div>
                         <div class="form-group">
                           <label>EOL Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="eol_date"/>
                         </div>
                         <div class="form-group">
                           <label>EOL Hrs</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="eol_hrs"/>
                         </div>
                         <div class="form-group">
                           <label>EOL Cycles</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="eol_cycles"/>
                         </div>
                       </div>
                       
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Auth No</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="auth_no" />
                         </div>
                         <div class="form-group">
                           <label>AMM</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="amm"/>
                         </div>
                         <div class="form-group">
                           <label>AMP</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="amp"/>
                         </div>
                         <div class="form-group">
                           <label>Revision</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="revision"/>
                         </div>
                         <div class="form-group">
-                          <label>Date</label>
-                          <input class="form-control" />
+                          <label>Revision Date</label>
+                          <input class="form-control" formControlName="rev_date"/>
                         </div>
                       </div>
                     
@@ -106,51 +106,51 @@
                       <div class="col-md-4">
                        <div class="form-group">
                           <label>Flight Status</label>
-                          <select class="form-control">
+                          <select class="form-control" formControlName="flight_status">
                             <option class="inservice">In Service</option>
                              <option class="outservice">Out Of Service</option>
                           </select>
                         </div>
                         <div class="form-group">
                           <label>Current A/C Flight Hrs</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="curr_ac_flight_hrs" />
                         </div>
                         <div class="form-group">
                           <label>Block Hrs</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="block_hrs" />
                         </div>
                         <div class="form-group">
                           <label>A/C Cycles</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="ac_cycles" />
                         </div>
                         <div class="form-group">
                           <label>RIN</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="rin"/>
                         </div>
                         <div class="form-group">
                           <label>Time As Of</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="time_as_of"/>
                         </div>
                       </div>
                       
                       <div class="col-md-4">
                         <div class="checkbox">
                           
-                          <label><input type="checkbox"> A/C Under Warranty</label>
+                          <label><input type="checkbox" formControlName="ac_under_warranty"> A/C Under Warranty</label>
                           
                         </div>
                         <div class="checkbox">
                           
-                          <label><input type="checkbox"> TPED Compatible</label>
+                          <label><input type="checkbox" formControlName="tped_comp"> TPED Compatible</label>
                           
                         </div>
                         <div class="form-group">
                           <label>ETOPS</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="etops" />
                         </div>
                         <div class="form-group">
                           <label>RSVM</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="rsvm" />
                         </div>
                         
                       </div>
@@ -159,19 +159,19 @@
                         A/C Component Warranty
                         <div class="form-group">
                           <label>Vendor</label>
-                          <input class="form-control" />
+                          <input class="form-control"  formControlName="vendor"/>
                         </div>
                         <div class="form-group">
                           <label>Warranty Hrs</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="war_hrs"/>
                         </div>
                         <div class="form-group">
                           <label>Warranty Cycles</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="warr_cycles"/>
                         </div>
                         <div class="form-group">
                           <label>Warranty Days</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="warr_days"/>
                         </div>
                         
                       </div>
@@ -192,46 +192,46 @@
                        
                         <div class="form-group">
                           <label>Max Taxi Weight</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="max_taxi_wei"/>
                         </div>
                         <div class="form-group">
                           <label>Fuel Capacity</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="fuel_cap"/>
                         </div>
                         <div class="form-group">
                           <label>BOAWI Value</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="boawi_val"/>
                         </div>
                         <div class="form-group">
                           <label>Freighter PAX Cargo</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="freigh_pax_cargo"/>
                         </div>
                         <div class="form-group">
-                          <label>Weight</label>
-                          <input class="form-control" />
+                          <label>Winglet</label>
+                          <input class="form-control" formControlName="winglet"/>
                         </div>
                       </div>
                       
                       <div class="col-md-3">
                         <div class="form-group">
                           <label>Max Landing Weigt</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="max_land_weight"/>
                         </div>
                         <div class="form-group">
                           <label>Max T/O Weight</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="max_to_weight" />
                         </div>
                         <div class="form-group">
                           <label>MAC Value</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="mac_val" />
                         </div>
                         <div class="form-group">
                           <label>Maximum Thrust</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="max_thrust"/>
                         </div>
                         <div class="form-group">
                           <label>Enhanced Cabin</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="enhacd_cabin"/>
                         </div>
                         
                       </div>
@@ -240,43 +240,40 @@
                        
                         <div class="form-group">
                           <label>Max Zero Fuel Weight</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="max_zero_fuel_weight"/>
                         </div>
                         <div class="form-group">
                           <label>Basic Fuel Weight</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="basic_empty_weight"/>
                         </div>
                         <div class="form-group">
                           <label>ARM Value</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="arm_value"/>
                         </div>
                         <div class="form-group">
                           <label>AMO</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="amo"/>
                         </div>
-                        <div class="form-group">
-                          <label>Fleet Age</label>
-                          <input class="form-control" />
-                        </div>
+                        
                       </div>
                       
                       <div class="col-md-3">
                        
                         <div class="form-group">
                           <label>Operation Empty Weight</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="ops_empty_weight"/>
                         </div>
                         <div class="form-group">
                           <label>Total Moment</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="total_moment"/>
                         </div>
                         <div class="form-group">
                           <label>OEW Value</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="oew_value"/>
                         </div>
                         <div class="form-group">
                           <label>Max Cruising Altitude</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="max_cruis_alt"/>
                         </div>
                         
                       </div>
@@ -300,23 +297,23 @@
                        
                         <div class="form-group">
                           <label>Engine Model</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="engine_model"/>
                         </div>
                         <div class="form-group">
                           <label>Delivery Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="delivery_date"/>
                         </div>
                         <div class="form-group">
                           <label>COA Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="coa_date"/>
                         </div>
                         <div class="form-group">
                           <label>Date On Ops</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="date_on_ops"/>
                         </div>
                         <div class="form-group">
                           <label>First Revenue Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="first_revenue_date" />
                         </div>
                       </div>  
                       
