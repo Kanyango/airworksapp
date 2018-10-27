@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { Alerts } from '../services/models';
+ 
 @Component({
     selector: 'newpn-component',
     templateUrl: './newpn.html'
@@ -13,7 +14,7 @@ export class NewPNComponent
   
   constructor(private fb: FormBuilder)
   {
-    this.createForm()
+      this.createForm()
   }
   
   createForm()
@@ -62,8 +63,23 @@ export class NewPNComponent
       })
   }
   
+  get alerts(): FormArray {
+    return this.newPnForm.get('alerts') as FormArray;
+  };
+
+  setAlerts(alerts: Alerts[]) {
+    const alertsFGs = alerts.map(alert => this.fb.group(alert));
+    const alertsFormArray = this.fb.array(alertsFGs);
+    this.newPnForm.setControl('alerts', alertsFormArray);
+  }
+
+  addAlert() {
+    this.alerts.push(this.fb.group(new Alert()));
+  }
+  
   onSubmit()
   {
-    console.log(this.flightLogForm.value);
+    console.log(this.newPnForm.value);
   }
+  
 }
