@@ -75,7 +75,6 @@ export class NewAircraftComponent {
         total_moment : ['', Validators.required],
         oew_value : ['', Validators.required],
         max_cruis_alt : ['', Validators.required],
-        status : ['', Validators.required],
         engine_model: ['',Validators.required],
         delivery_date : ['', Validators.required],
         coa_date : ['', Validators.required],
