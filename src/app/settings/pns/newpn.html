@@ -9,9 +9,9 @@
                 <div class="card-body">
                     <h3 class="card-title">New Part No</h3>
                     <hr>
-                    <ngb-tabset>
-                      <ngb-tab title="General">
-                        <ng-template ngbTabContent>
+                    <ngb-accordion [closeOthers]="true" #acc="ngbAccordion" activeIds="ngb-panel-0">
+                      <ngb-panel title="General">
+                        <ng-template ngbPanelContent>
                           <form [formGroup]="newPnForm" (ngSubmit)="onSubmit()">
                             <div class="container">
                                 <div class="row">
@@ -61,11 +61,11 @@
                               </div>  
                           </form>
                         </ng-template>
-                      </ngb-tab>
+                      </ngb-panel>
                       
                       
-                      <ngb-tab title="Inventory">
-                        <ng-template ngbTabContent> 
+                      <ngb-panel title="Inventory">
+                        <ng-template ngbPanelContent> 
                           <br>
                           <div class="container">
                             <div class="row">
@@ -117,7 +117,7 @@
                             </div>
                           </div>
                         </ng-template>
-                      </ngb-tab>
+                     </ngb-panel>
                       
                       
                       <!-- <ngb-tab title="Costing">
@@ -126,8 +126,8 @@
                         </ng-template>
                       </ngb-tab>
                       -->
-                      <ngb-tab title="Tech Records">
-                        <ng-template ngbTabContent> 
+                      <ngb-panel title="Tech Records">
+                        <ng-template ngbPanelContent> 
                           <br>
                           <div class="container">
                             <div class="row">
@@ -213,10 +213,10 @@
                           </div>
                             </div>
                         </ng-template>
-                      </ngb-tab>
-                      <ngb-tab>
+                      </ngb-panel>
+                      <ngb-panel>
                         <ng-template ngbTabTitle>Reliability</ng-template>
-                        <ng-template ngbTabContent>
+                        <ng-template ngbPanelContent>
                           <br>
                             <form>
                             <div class="container">
@@ -277,9 +277,9 @@
                                      <button class="btn btn-danger" type="submit" [disabled]="newPnForm.invalid"> save </button>                                                   
                             </form>
                         </ng-template>
-                      </ngb-tab>
+                      </ngb-panel>
                       
-                    </ngb-tabset>
+                    </ngb-accordion>
                 </div>
             </div>
         </div>
