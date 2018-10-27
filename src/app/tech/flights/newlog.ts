@@ -42,4 +42,9 @@ export class NewACLogsComponent
         flight_hrs : ['',Validators.required]
       })
   }
+  
+  onSubmit()
+  {
+    console.log(this.flightLogForm.value);
+  }
 }
