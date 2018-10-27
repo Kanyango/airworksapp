@@ -78,7 +78,7 @@ export class NewPNComponent
   }
 
   addAlert() {
-    this.alerts.push(this.fb.group(new Alert()));
+    this.alerts.push(this.fb.group(new Alerts()));
   }
   
   onSubmit()
