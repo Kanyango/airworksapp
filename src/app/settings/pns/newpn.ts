@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Alerts } from '../services/models';
+import { Alerts } from '.././services/models';
  
 @Component({
     selector: 'newpn-component',
@@ -31,8 +31,6 @@ export class NewPNComponent
         sec : ['',Validators.required],
         par : ['',Validators.required],
         uom : ['',Validators.required],
-        engine : ['',Validators.required],
-        apu : ['',Validators.required],
         rel_mont : ['',Validators.required],
         no_remvs : ['',Validators.required],
         no_days : ['',Validators.required],
