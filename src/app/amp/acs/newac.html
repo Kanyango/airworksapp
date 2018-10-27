@@ -9,7 +9,7 @@
           <h3 class="card-title">New Aircraft Card</h3>
           <hr>
           
-          <form>
+          <form [formGroup]="newAcForm" (ngSubmit)="onSubmit()">
             <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
               <ngb-panel title="General">
                 <ng-template ngbPanelContent>
