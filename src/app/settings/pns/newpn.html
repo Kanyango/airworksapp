@@ -66,6 +66,7 @@
                       
                       <ngb-tab title="Inventory">
                         <ng-template ngbTabContent> 
+                          <br>
                           <div class="container">
                             <div class="row">
                               <div class="col-md-3 form-group">
@@ -76,36 +77,40 @@
                             <br>
                             <br>
                             <div class="row">
-                                <input type="checkbox" formControlName="non_rep_part"> Non-Repairable Part 
-                              <br>
-                              <br>
+                              <div class="checkbox">
+                               <label> <input type="checkbox" formControlName="non_rep_part"> Non-Repairable Part </label>
+                              </div>
                                 <!--<input type="checkbox" > Non-Exchangable Part  -->
-                                <input type="checkbox" formControlName="inv_mon"> Inventory Monitored 
-                              <br>
-                              <br>
-                                <input type="checkbox" formControlName="shelf_life"> Shelf Life Flag 
-                              <br>
-                              <br>
-                                <input type="checkbox" formControlName="unlim_shelf_life"> Unlimited Shelf Life Flag 
-                            </div>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" formControlName="inv_mon"> Inventory Monitored  </label>
+                              </div>
+                              <div class="checkbox">
+                                <label><input type="checkbox" formControlName="shelf_life"> Shelf Life Flag</label> 
+                              </div>
+                              <div class="checkbox">
+                                <label> <input type="checkbox" formControlName="unlim_shelf_life"> Unlimited Shelf Life Flag </label>
+                              </div>
+                              </div>
                             <br>
                             <br>
                             <div class="row">
-                                <input type="checkbox" formControlName="tool_ctrl"> Tool Control
-                                  <br>
-                                  <br> 
-                                <input type="checkbox" formControlName="tool_calib"> Tool Calibration Flag
+                              <div class="checkbox">
+                               <label> <input type="checkbox" formControlName="tool_ctrl"> Tool Control</label>
+                               </div>
+                              <div class="checkbox">
+                                <label><input type="checkbox" formControlName="tool_calib"> Tool Calibration Flag </label>
+                              </div>
                                 &nbsp;&nbsp; Days<input type="text" formControlName="tool_days">  
-                                <br>
-                                <br>
-                               <input type="checkbox"  formControlName="clim_ctrl"> Climate Controlled    
+                                <div class="checkbox">
+                               <label><input type="checkbox"  formControlName="clim_ctrl"> Climate Controlled </label> 
+                              </div>
                             </div>
                             <br>
                             <br>
                             <div class="row">
-                              <input type="checkbox" formControlName="static_sens_part"> Static Sensitive Part
-                              <br>
-                               <br>
+                              <div class="checkbox">
+                              <;<input type="checkbox" formControlName="static_sens_part"> Static Sensitive Part
+                              </div>
                                <input type="checkbox" formControlName="avi_part"> Avionic Part
                             </div>
                           </div>
@@ -121,6 +126,7 @@
                       -->
                       <ngb-tab title="Tech Records">
                         <ng-template ngbTabContent> 
+                          <br>
                           <div class="container">
                             <div class="row">
                               
@@ -163,20 +169,22 @@
                                 
                             </div>
                               
-                              <div class="col-md-4 radio">
-                               <input type="radio" formControlName="apu"/> APU
-                                <br>
-                                <br>
-                              <input type="radio"  formControlName="engine"/> Engine'
-                                <br>
-                                <br>
-                              <input type="radio" formControlName="lng"/> Landing Gear
-                                <br>
-                                <br>
-                              <input type="radio" formControlName="disk"/> Disk
-                                <br>
-                                <br>
-                              <input type="radio" formControlName="recorder"/> Recorder
+                              <div class="col-md-4 ">
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio"  formControlName="apu"/> APU</label>
+                                </div>
+                                
+                               <div class="radio">
+                                    <label><input type="radio" name="optradio" formControlName="engine"/> Engine</label>
+                                </div>
+                              <div class="radio">
+                                  <label> <input type="radio" name="optradio" formControlName="lng"/> Landing Gear</label>
+                              </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="optradio" formControlName="disk"/> Disk</label>
+                                <div class="radio">
+                                        <label> <input type="radio" name="optradio" formControlName="recorder"/> Recorder</label>
+                                  </div>
                                 
                             </div>
                               
@@ -206,6 +214,7 @@
                       <ngb-tab>
                         <ng-template ngbTabTitle>Reliability</ng-template>
                         <ng-template ngbTabContent>
+                          <br>
                             <form>
                             <div class="container">
                                 <div class="row">
@@ -239,12 +248,8 @@
                                         add Alert
                                       </button>
                                       
-                                      
-                                    </div>
-                                                                                                        
-                                  <div class="col-md-6">
-                                     <div formArrayName="alerts" class="well well-lg">
-                                      <div *ngFor="let alert of alerts.controls; let i=index" [formGroupName]="i" >
+                                      <div formArrayName="alerts" class="card" >
+                                      <div class="card-body" *ngFor="let alert of alerts.controls; let i=index" [formGroupName]="i" >
                                          <div class="form-group">
                                             <label>A/C Series</label>
                                             <input type="text" class="form-control" formControlName="acser">
@@ -260,7 +265,9 @@
                                            <button class="btn btn-danger" type="button" >remove</button>                                                                     
                                       </div>
                                     </div>
-                                  </div>
+                                    </div>
+                                                                                                        
+                                 
                                                        
                                 </div>
                             </div>
