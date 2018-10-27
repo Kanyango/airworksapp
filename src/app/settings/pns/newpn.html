@@ -12,47 +12,47 @@
                     <ngb-tabset>
                       <ngb-tab title="General">
                         <ng-template ngbTabContent>
-                          <form>
+                          form [formGroup]="newPnForm" (ngSubmit)="onSubmit()">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div>
-                                            <input type="checkbox">
+                                            <input type="checkbox" formControlName="active">
                                             <label>Active</label>
                                         </div>
-                                        <div>
+                                        <div class="form-group">
                                             <label>P/N</label>
-                                            <input type="text">
+                                            <input type="text" class="form-control" formControlName="pn">
                                         </div>
-                                        <div>
+                                        <div class="form-group">
                                             <label>P/N Desc</label>
-                                            <input type="text">
+                                            <input type="text" class="form-control" formControlName="pn_desc">
                                         </div>
                                         
                                     </div>
                                     <div class="col-md-3">
-                                        <div>
+                                        <div class="form-group">
                                             <label>Category </label>
-                                            <input type="text">
+                                            <input type="text" class="form-control" formControlName="category">
                                         </div>
-                                        <div>
+                                        <div class="form-group">
                                             <label>Sub Category</label>
-                                            <input type="text">
+                                            <input type="text" class="form-control" formControlName="sub_category">
                                         </div>
-                                        <div>
+                                        <div class="form-group">
                                             <label>Manufacturer</label>
-                                            <input type="text">
+                                            <input type="text" class="form-control" formControlName="manufacturer">
                                         </div>
                                         
                                     </div>
                                     <div class="col-md-">
                                         <div>
-                                            <label>Chapter </label>
-                                            <input type="text">
+                                            <label class="form-group">Chapter </label>
+                                            <input type="text" class="form-control" formControlName="chapter">
                                         </div>
-                                        <div>
+                                        <div class="form-group">
                                             <label>Section</label>
-                                            <input type="text">
+                                            <input type="text" class="form-control" formControlName="sec">
                                         </div>
                                         
                                         
@@ -68,33 +68,45 @@
                         <ng-template ngbTabContent> 
                           <div class="container">
                             <div class="row">
-                              <div class="col-md-3">
+                              <div class="col-md-3 form-group">
                                 <label>I.P.C No</label>
-                                <input type="text">
+                                <input type="text" class="form-control" formControlName="ipc">
                               </div>
                             </div>
                             <br>
                             <br>
                             <div class="row">
-                                <input type="checkbox" > Non-Repairable Part 
-                                <input type="checkbox" > Non-Exchangable Part 
-                                <input type="checkbox" > Inventory Monitored 
-                                <input type="checkbox" > Shelf Life Flag 
-                                <input type="checkbox" > Unlimited Shelf Life Flag 
+                                <input type="checkbox" formControlName="non_rep_part"> Non-Repairable Part 
+                              <br>
+                              <br>
+                                <!--<input type="checkbox" > Non-Exchangable Part  -->
+                                <input type="checkbox" formControlName="inv_mon"> Inventory Monitored 
+                              <br>
+                              <br>
+                                <input type="checkbox" formControlName="shelf_life"> Shelf Life Flag 
+                              <br>
+                              <br>
+                                <input type="checkbox" formControlName="unlim_shelf_life"> Unlimited Shelf Life Flag 
                             </div>
                             <br>
                             <br>
                             <div class="row">
-                                <input type="checkbox" > Tool Control
-                                <input type="checkbox" > Tool Calibration Flag
-                                &nbsp;&nbsp; Days<input type="text" >  
-                                <input type="checkbox" > Climate Controlled
+                                <input type="checkbox" formControlName="tool_ctrl"> Tool Control
+                                  <br>
+                                  <br> 
+                                <input type="checkbox" formControlName="tool_calib"> Tool Calibration Flag
+                                &nbsp;&nbsp; Days<input type="text" formControlName="tool_days">  
+                                <br>
+                                <br>
+                               <input type="checkbox"  formControlName="clim_ctrl"> Climate Controlled    
                             </div>
                             <br>
                             <br>
                             <div class="row">
-                              <input type="checkbox" > Static Sensitive Part
-                               <input type="checkbox" > Avionic Part
+                              <input type="checkbox" formControlName="static_sens_part"> Static Sensitive Part
+                              <br>
+                               <br>
+                               <input type="checkbox" formControlName="avi_part"> Avionic Part
                             </div>
                           </div>
                         </ng-template>
