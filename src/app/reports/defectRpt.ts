@@ -68,7 +68,19 @@ export class NewDefectRPTComponent
           disp_res : ['',Validators.required],
           release_to_service : ['',Validators.required],
           ref : ['',Validators.required],
-          ac : ['',Validators.required],
+          install : this.fb.array([]),
+          trb_station : ['',Validators.required],
+          trb_by : ['',Validators.required],
+          trb_shoot_on : ['',Validators.required],
+          trb_cat : ['',Validators.required],
+          trb_status : ['',Validators.required],
+          trb_created_by : ['',Validators.required],
+          trb_created_date : ['',Validators.required],
+          trb_desc : ['',Validators.required],
+          manual : ['',Validators.required],
+          reference : ['',Validators.required],
+          pn_rq_list : this.fb.array([])
+        
       })
   }
   
