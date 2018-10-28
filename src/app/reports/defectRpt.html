@@ -265,7 +265,7 @@
                 </ng-template>
               </ngb-panel>
                   
-               <ngb-panel title="Requisition">
+              <!--<ngb-panel title="Requisition">
                   <ng-template ngbPanelContent>
                     
                   </ng-template>
@@ -277,7 +277,7 @@
                       
                     
                   </ng-template>
-              </ngb-panel>
+              </ngb-panel> -->
                   
               <ngb-panel title="Troubleshooting">
                   <ng-template ngbPanelContent>
@@ -335,11 +335,14 @@
                     </div>
                    </div>
                     
-                    
+                    <button class="btn btn-success btn-lg float-right" type='submit' 
+                            [disabled]="!defectRptForm.valid">
+                      save
+                    </button>
                   </ng-template>
               </ngb-panel>
                   
-                <ngb-panel title="ECM">
+                <!--<ngb-panel title="ECM">
                   <ng-template ngbPanelContent>
                     
                   </ng-template>
@@ -351,18 +354,15 @@
                     
                     
                   </ng-template>
-              </ngb-panel>
+              </ngb-panel> 
                   
                <ngb-panel title="OPS">
                   <ng-template ngbPanelContent>
                     
                     
-                    <button class="btn btn-success btn-lg float-right" type='submit' 
-                            [disabled]="!defectRptForm.valid">
-                      save
-                    </button>
+                    
                   </ng-template>
-               </ngb-panel>
+               </ngb-panel> -->
                   
             </ngb-accordion>
           </form>
