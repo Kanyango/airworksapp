@@ -4,7 +4,7 @@
 <br>
 <div class="container">
   <div class="row">
-    <div class="col-md-8 md-offset-2">
+    <div class="col-md-8 offset-md-2">
       <div class="card">
         <div class="card-body">
           <h3 class="card-title"> New Picklist Card </h3>
@@ -49,7 +49,7 @@
               </div>
               
               <div class="row">
-                <div formArrayName="pns" class="card" >
+                <div formArrayName="pns" class="col-md-6 offset-md-3 card" >
                   <div class="card-body" *ngFor="let pn of pns.controls; let i=index" [formGroupName]="i" >
                       <div class="form-group">
                         <label>P/N</label>
