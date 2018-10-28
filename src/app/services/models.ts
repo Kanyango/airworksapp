@@ -31,3 +31,11 @@ export class PNs
   qty = '';
   stock_uom = '';
 }
+export class TaskItems
+{
+  desc = '';
+  ref = '';
+  element = '';
+  pn = '';
+  qty = '';
+}
