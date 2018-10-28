@@ -11,7 +11,7 @@
           <hr>
           <form>
             <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
-              <ngb-panel title="Simple">
+              <ngb-panel title="General">
                 <ng-template ngbPanelContent>
                   
                   <div class="container-fluid">
@@ -122,16 +122,70 @@
                 </ng-template>
               </ngb-panel>
               <ngb-panel>
-                <ng-template ngbPanelTitle>
-                  
-                </ng-template>
+                <ng-template ngbPanelTitle> Defer </ng-template>
                 <ng-template ngbPanelContent>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-                  aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                  craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                  labore sustainable VHS.
+                 
+                  <div class="container-fluid">
+                    <div class="row">
+                      
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Defer</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Defer Category</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Defer By</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Defer Date</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="radio">
+                          <label>
+                          <input  class="radio" /> MEL </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                          <input class="radio" /> CDL </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                          <input class="radio" /> GMM</label>
+                        </div>
+                        <div class="form-group">
+                          <label>Defer From W/O</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Chapter</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Section</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>Paragraph</label>
+                          <input class="form-control" />
+                        </div>
+                        <div class="form-group">
+                          <label>ASC</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                    
                 </ng-template>
               </ngb-panel>
               <ngb-panel title="Disabled" [disabled]="true">
