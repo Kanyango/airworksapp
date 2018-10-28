@@ -45,6 +45,7 @@ import { ReceeiveComponent  } from './receive/receive';
 import { RequisitionComponent  } from './req/newreq';
 import { NewAircraftComponent } from './amp/acs/newac';
 import { NewDefectRPTComponent  } from './reports/defectRpt';
+import { PickListComponent  } from './inventory/picklist';
 
 
 const routes: Routes = 
@@ -91,7 +92,8 @@ const routes: Routes =
           { path: 'receive', component: ReceeiveComponent },
              { path: 'newaircraft', component: NewAircraftComponent },
             { path: 'new_requisition', component: RequisitionComponent },
-            { path: 'new_defect_report', component: NewDefectRPTComponent }
+            { path: 'new_defect_report', component: NewDefectRPTComponent },
+            { path: 'new_picklist', component: PickListComponent }
         ];
 
 @NgModule({
