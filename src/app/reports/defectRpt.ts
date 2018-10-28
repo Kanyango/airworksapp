@@ -50,7 +50,25 @@ export class NewDefectRPTComponent
           cdl : ['',Validators.required],
           gmm : ['',Validators.required],
           defer_wo : ['',Validators.required],
-        
+          defer_task_card : ['',Validators.required],
+          defer_to_hrs : ['',Validators.required],
+          defer_to_cycles : ['',Validators.required],
+          defer_to_days : ['',Validators.required],
+          defer_due_date : ['',Validators.required],
+          res_cat : ['',Validators.required],
+          res_by : ['',Validators.required],
+          res_station : ['',Validators.required],
+          res_desc : ['',Validators.required],
+          res_wo : ['',Validators.required],
+          res_task_card : ['',Validators.required],
+          inspected_by : ['',Validators.required],
+          res_on : ['',Validators.required],
+          log_item : ['',Validators.required],
+          root_cause : ['',Validators.required],
+          disp_res : ['',Validators.required],
+          release_to_service : ['',Validators.required],
+          ref : ['',Validators.required],
+          ac : ['',Validators.required],
       })
   }
   
