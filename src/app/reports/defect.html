@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
-            <a routerLink="/newaclog" class="btn btn-outline-primary float-right" type="button">
+            <a routerLink="/new_defect_report" class="btn btn-outline-primary float-right" type="button">
                 new flight log
             </a>
         </div>
@@ -33,16 +33,21 @@
                           <h5 class="mb-1">A/C : {{ one.ac }}</h5>
                           <small>Flight Log: {{ one.flight_log }}</small>
                             <a routerLink="/delay" class="btn btn-warning float-right" type="button">
-                                add delay
+                                pn request
                             </a>
                             
                         </div>
                         <p class="mb-1">Flight Date: {{ one.flight_date }}</p>
                         <small>A/C Origin: {{ one.origin }}</small> -
                         <small>A/C Destn: {{ one.destination }}</small>
-                          <units-component></units-component><br><br>
-                          <a routerLink="/addecm" class="btn btn-success float-right" type="button">
-                                add ecm log
+                          <a routerLink="/addecm" class="btn btn-primary float-right" type="button">
+                                P/N install/remove 
+                            </a>
+                            <a routerLink="/addecm" class="btn btn-primary float-right" type="button">
+                                ECM
+                            </a>
+                          <a routerLink="/new_requisition" class="btn btn-success float-right" type="button">
+                                requisition
                             </a>
                       </div>
                       
