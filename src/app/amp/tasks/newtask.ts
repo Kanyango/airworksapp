@@ -36,7 +36,21 @@ export class NewTaskComponent {
         chap: ['', Validators.required],
         sec: ['', Validators.required],
         par: ['', Validators.required],
-        ele: ['', Validators.required],
+        mechanic: ['', Validators.required],
+        elec_load_charge: ['', Validators.required],
+        mod_no: ['', Validators.required],
+        wo_status: ['', Validators.required],
+        repair_alt: ['', Validators.required],
+        auth_by: ['', Validators.required],
+        auth_date: ['', Validators.required],
+        hyd_power: ['', Validators.required],
+        elec_power: ['', Validators.required],
+        flaps_pos: ['', Validators.required],
+        spoilers: ['', Validators.required],
+        slats: ['', Validators.required],
+        fuel_tanks: ['', Validators.required],
+        mechanic: ['', Validators.required],
+        corr: ['', Validators.required],
         items : this.fb.array([])
         
       })
