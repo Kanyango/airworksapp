@@ -44,6 +44,8 @@ import { NewPOComponent  } from './orders/newpo';
 import { ReceeiveComponent  } from './receive/receive';
 import { RequisitionComponent  } from './req/newreq';
 import { NewAircraftComponent } from './amp/acs/newac';
+import { NewDefectRPTComponent  } from './reports/defectRpt';
+
 
 const routes: Routes = 
         [
@@ -88,7 +90,8 @@ const routes: Routes =
             { path: 'newpo', component: NewPOComponent },
           { path: 'receive', component: ReceeiveComponent },
              { path: 'newaircraft', component: NewAircraftComponent },
-            { path: 'new_requisition', component: RequisitionComponent }
+            { path: 'new_requisition', component: RequisitionComponent },
+            { path: 'new_defect_report', component: NewDefectRPTComponent }
         ];
 
 @NgModule({
