@@ -9,7 +9,8 @@
         <div class="card-body">
           <h3 class="card-title">New Defect Report</h3>
           <hr>
-          <form>
+          <form [formGroup]="defectRptForm" (ngSubmit)="onSubmit()">
+            
             <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
               <ngb-panel title="General">
                 <ng-template ngbPanelContent>
@@ -423,11 +424,18 @@
                     
                   </ng-template>
               </ngb-panel>
+                  
                <ngb-panel title="OPS">
                   <ng-template ngbPanelContent>
                     
+                    
+                    <button class="btn btn-success btn-lg float-right" type='submit' 
+                            [disabled]="!defectRptForm.valid">
+                      save
+                    </button>
                   </ng-template>
                </ngb-panel>
+                  
             </ngb-accordion>
           </form>
         </div>
