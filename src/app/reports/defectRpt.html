@@ -1,4 +1,3 @@
-
 <navbar-component></navbar-component>
 <br>
 <br>
@@ -21,56 +20,56 @@
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Defect Type</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defect_type" />
                         </div>
                         <div class="form-group">
                           <label>Defect</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defect" />
                         </div>
                         <div class="form-group">
                           <label>Item</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="item"/>
                         </div>
                         <div class="form-group">
                           <label>A/C</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="ac" />
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Flight</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="flight"/>
                         </div>
                         <div class="form-group">
                           <label>Gate</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="gate"/>
                         </div>
                         <div class="form-group">
                           <label>Position</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="position" />
                         </div>
                         <div class="form-group">
                           <label>Status</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="status" />
                         </div>
                       </div>
                       
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Chapter</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="chap" />
                         </div>
                         <div class="form-group">
                           <label>Section</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="sec" />
                         </div>
                         <div class="form-group">
                           <label>Paragraph</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="par" />
                         </div>
                         <div class="form-group">
                           <label>ASC</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="asc" />
                         </div>
                       </div>
                       
@@ -80,48 +79,46 @@
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Defect CAT</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defect_cat"/>
                         </div>
                          <div class="form-group">
                           <label>Requested By</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="rqstd_by"/>
                         </div>
                          <div class="form-group">
                           <label>Request Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="rptd_date"/>
                         </div>
                          <div class="form-group">
                           <label>Station</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="station"/>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Authorization</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="auth"/>
                         </div>
                          <div class="form-group">
                           <label>Task Card</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="task_card" />
                         </div>
                          <div class="form-group">
                           <label>Estimated TAT</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="est_tat" />
                         </div>
                          <div class="form-group">
                           <label>Ground Time Required</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="grnd_time_rqrd" />
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Defect CAT</label>
-                          <textarea class="form-control" ></textarea>
-                    </div>
+                      
+                      </div>
                   </div>
                   
                 </ng-template>
               </ngb-panel>
+                    
               <ngb-panel>
                 <ng-template ngbPanelTitle> Defer </ng-template>
                 <ng-template ngbPanelContent>
@@ -132,64 +129,61 @@
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Defer</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defer" />
                         </div>
                         <div class="form-group">
                           <label>Defer Category</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defer_cat"/>
                         </div>
                         <div class="form-group">
                           <label>Defer By</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defer_by"/>
                         </div>
                         <div class="form-group">
                           <label>Defer Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defer_by"/>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="radio">
                           <label>
-                          <input  class="radio" /> MEL </label>
+                          <input  class="radio" formControlName="mel" /> MEL </label>
                         </div>
                         <div class="radio">
                           <label>
-                          <input class="radio" /> CDL </label>
+                          <input class="radio" formControlName="cdl"/> CDL </label>
                         </div>
                         <div class="radio">
                           <label>
-                          <input class="radio" /> GMM</label>
+                          <input class="radio" formControlName="gmm" /> GMM</label>
                         </div>
                         <div class="form-group">
                           <label>Defer From W/O</label>
-                          <input class="form-control" />
+                          <input class="form-control"  formControlName="defer_wo"/>
                         </div>
                       </div>
                       
                       <div class="col-md-4">
-                        <div class="form-group">
-                          <label>Defer From W/O</label>
-                          <input class="form-control" />
-                        </div>
+                        
                         <div class="form-group">
                           <label>Defer From Task Card</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defer_task_card" />
                         </div>
                         <div class="form-group">
                           <label>Defer to Hrs</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defer_to_hrs"/>
                         </div>
                         <div class="form-group">
                           <label>Defer to Cycles</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defer_to_cycles"/>
                         </div>
                          <div class="form-group">
                           <label>Defer to Days</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defer_to_days"/>
                         </div>
                          <div class="form-group">
                           <label>Defer Due Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="defer_due_date" />
                         </div>
                       </div>
                     </div>
@@ -206,60 +200,60 @@
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Resolution CAT</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="res_cat"/>
                         </div>
                         <div class="form-group">
                           <label>Resolved By</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="res_by" />
                         </div>
                         <div class="form-group">
                           <label>Resolved Station</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="res_station" />
                         </div>
                         <div class="form-group">
                           <label>Resolution Description</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="res_desc" />
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>W/O</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="res_wo" />
                         </div>
                         <div class="form-group">
                           <label>Task Card</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="res_task_card" />
                         </div>
                         <div class="form-group">
                           <label>Inspected By</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="inspected_by"/>
                         </div>
                         <div class="form-group">
                           <label>Resolved On</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="res_on"/>
                         </div>
                       </div>
                       
                       <div class="col-md-4">
                         <div class="form-group">
                           <label>Log Item</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="log_item"/>
                         </div>
                         <div class="form-group">
                           <label>Root Cause</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="root_cause"/>
                         </div>
                         <div class="form-group">
                           <label>Dispatch Notified Resolution</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="disp_res" />
                         </div>
                         <div class="form-group">
                           <label>Release to Service Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="release_to_service" />
                         </div>
                          <div class="form-group">
                           <label>Reference</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="ref" />
                         </div>
                          
                       </div>
@@ -280,45 +274,7 @@
                <ngb-panel title="Installation/Removal">
                   <ng-template ngbPanelContent>
                     
-                      <div class="container-fluid">
-                       <div class="row">
                       
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label>A/C</label>
-                            <input class="form-control" />
-                          </div>
-                          <div class="form-group">
-                            <label>P/N</label>
-                            <input class="form-control" />
-                          </div>
-                          <div class="form-group">
-                            <label>S/N</label>
-                            <input class="form-control" />
-                          </div>
-                          <div class="form-group">
-                            <label>Position</label>
-                            <input class="form-control" />
-                          </div>
-                          <div class="form-group">
-                            <label>ATA</label>
-                            <input class="form-control" />
-                          </div>
-                          <div class="form-group">
-                            <label>Status</label>
-                            <select class="form-control" >
-                              <option value="install">Install</option>
-                              <option value="removal">Removal</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label>Reason</label>
-                            <textarea class="form-control" ></textarea>
-                          </div>
-                        </div>
-                      
-                    </div>
-                   </div>
                     
                   </ng-template>
               </ngb-panel>
@@ -332,46 +288,46 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Station</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="trb_station" />
                         </div>
                         <div class="form-group">
                           <label>TroubleShoot By</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="trb_by" />
                         </div>
                         <div class="form-group">
                           <label>TroubleShoot On</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="trb_shoot_on"/>
                         </div>
                         <div class="form-group">
                           <label>Category</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="trb_cat"/>
                         </div>
                         <div class="form-group">
                           <label>Status</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="trb_status" />
                         </div>
                       </div>
                       
                       <div class="col-md-6">
                         <div class="form-group">
                           <label>Created By</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="trb_created_by" />
                         </div>
                         <div class="form-group">
                           <label>Created Date</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="trb_created_date" />
                         </div>
                         <div class="form-group">
                           <label>Description</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="trb_desc"/>
                         </div>
                         <div class="form-group">
                           <label>Manual</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="manual" />
                         </div>
                         <div class="form-group">
                           <label>Reference</label>
-                          <input class="form-control" />
+                          <input class="form-control" formControlName="reference" />
                         </div>
                       </div>
                       
@@ -392,34 +348,6 @@
                 <ngb-panel title="PN Request">
                   <ng-template ngbPanelContent>
                     
-                    <div class="container-fluid">
-                      <div class="row">
-                      
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label> P/N </label>
-                          <input class="form-control" />
-                        </div>
-                        <div class="form-group">
-                          <label> IPC </label>
-                          <input class="form-control" />
-                        </div>
-                        <div class="form-group">
-                          <label> QTY </label>
-                          <input class="form-control" />
-                        </div>
-                        <div class="form-group">
-                          <label> Created By </label>
-                          <input class="form-control" />
-                        </div>
-                        <div class="form-group">
-                          <label> Modified By </label>
-                          <input class="form-control" />
-                        </div>
-                      </div>
-                      
-                    </div>
-                   </div>
                     
                     
                   </ng-template>
