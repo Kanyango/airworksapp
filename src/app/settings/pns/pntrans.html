@@ -8,80 +8,84 @@
                 <div class="card-body">
                     <h4 class="card-title">A/C P/N transaction</h4>
                     <hr>
-                    <form>
-                        
-                        <div style="display: inline;">
-                            <label>P/N</label>
-                            <input>
+                    <form [formGroup]="pnTransForm" (ngSubmit)="onSubmit()">
+
+                      <div class="container">
+                        <div class="row">
+                          
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>P/N</label>
+                              <input class="form-control" formControlName="pn"/>
+                            </div>  
+                            <div class="form-group">
+                              <label>S/N</label>
+                              <input class="form-control" formControlName="sn"/>
+                            </div>  
+                            <div class="form-group">
+                              <label>Position</label>
+                              <input class="form-control" formControlName="position"/>
+                            </div>  
+                            <div class="form-group">
+                              <label>Type</label>
+                              <input class="form-control" formControlName="type"/>
+                            </div>  
+                          </div>
+                          
+                           <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Defect Type</label>
+                              <input class="form-control" formControlName="defect_type"/>
+                            </div>  
+                            <div class="form-group">
+                              <label>Defect</label>
+                              <input class="form-control" formControlName="defect"/>
+                            </div>  
+                            <div class="form-group">
+                              <label>Item</label>
+                              <input class="form-control" formControlName="item"/>
+                            </div>  
+                            <div class="form-group">
+                              <label>W/O</label>
+                              <input class="form-control" formControlName="wo"/>
+                            </div>  
+                          </div>
+                          
+                           <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Task Card</label>
+                              <input class="form-control" formControlName="tc"/>
+                            </div>  
+                            <div class="form-group">
+                              <label>T/C P/N</label>
+                              <input class="form-control" formControlName="tcpn"/>
+                            </div>  
+                            <div class="form-group">
+                              <label>Transaction</label>
+                              <select class="form-control" formControlName="transaction"/>
+                                <option value="install">Install Only</option>
+                                <option value="removal">Removal Only</option>
+                                <option value="inst_rem">Install/Remove</option>
+                              </select>
+                            </div>  
+                            <div class="form-group">
+                              <label>A/C</label>
+                              <input class="form-control" formControlName="ac"/>
+                            </div>
+                             <div class="form-group">
+                              <label>Date</label>
+                              <input class="form-control" formControlName="date"/>
+                            </div>
+                            <div class="form-group">
+                              <label>Station</label>
+                              <input class="form-control" formControlName="station"/>
+                            </div>
+                          </div>
+                          
                         </div>
-                        <div style="display: inline;">
-                            <label>S/N</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>Position</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>Scheduled</label>
-                            <input type="radio">
-                        </div>
-                        <div style="display: inline;">
-                            <label>UnScheduled</label>
-                            <input type="radio">
-                        </div>
-                        <div style="display: inline;">
-                            <label>Swap</label>
-                            <input type="radio">
-                        </div>
-                        <br>
-                        <br>
-                        <div style="display: inline;">
-                            <label>Defect Type</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>Defect</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>Item</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>W/O</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>Task Card</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>TC/PN</label>
-                            <input>
-                        </div>
-                        <br>
-                        <br>
-                        <div style="display: inline;">
-                            <label>Transaction</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>A/C</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>Date</label>
-                            <input>
-                        </div>
-                        <div style="display: inline;">
-                            <label>Station</label>
-                            <input>
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <button class="btn btn-success float-right" type="button">
+                      </div>
+                      
+                        <button class="btn btn-success float-right" type="submit" [disabled]="!pnTransForm.valid">
                             save
                         </button>
                         
