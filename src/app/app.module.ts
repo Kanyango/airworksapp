@@ -69,6 +69,8 @@ import { NewPOComponent  } from './orders/newpo';
 import { ReceeiveComponent  } from './receive/receive';
 import { RequisitionComponent  } from './req/newreq';
 
+import { NewDefectRPTComponent  } from './reports/defectRpt';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -126,7 +128,8 @@ import { RequisitionComponent  } from './req/newreq';
     NewInvPartComponent,
     NewPOComponent,
     ReceeiveComponent,
-    RequisitionComponent
+    RequisitionComponent,
+    NewDefectRPTComponent
     
   ],
   imports: [
