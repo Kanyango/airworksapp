@@ -70,6 +70,7 @@ import { ReceeiveComponent  } from './receive/receive';
 import { RequisitionComponent  } from './req/newreq';
 
 import { NewDefectRPTComponent  } from './reports/defectRpt';
+import { DefPNRemInstComponent  } from './reports/defpnreminst';
 
 @NgModule({
   declarations: [
@@ -129,7 +130,8 @@ import { NewDefectRPTComponent  } from './reports/defectRpt';
     NewPOComponent,
     ReceeiveComponent,
     RequisitionComponent,
-    NewDefectRPTComponent
+    NewDefectRPTComponent,
+    DefPNRemInstComponent
     
   ],
   imports: [
