@@ -10,7 +10,7 @@
           <hr>
           <form [formGroup]="defectRptForm" (ngSubmit)="onSubmit()">
             
-            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+            <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="ngb-panel-0">
               <ngb-panel title="General">
                 <ng-template ngbPanelContent>
                   
