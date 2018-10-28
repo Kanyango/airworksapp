@@ -20,14 +20,21 @@ export class PNTransComponent
   {
      this.pnTransForm = this.fb.group(
       {  
-        wo : [''],
-        inv_loc: ['', Validators.required],
-        task_card: ['', Validators.required],
-        req_by: ['', Validators.required],
-        priority: ['', Validators.required],
-        deli_loc: [''],
-        deli_site: [''],
-        pns  : this.fb.array([])
+        
+        pn : ['',Validators.required],
+        sn: ['', Validators.required],
+        position : ['', Validators.required],
+        type : ['', Validators.required],
+        defect_type: ['', Validators.required],
+        defect: ['', Validators.required],
+        item : ['' , Validators.required],
+        wo : ['' , Validators.required],
+        tc : ['' , Validators.required],
+        tcpn : ['' , Validators.required],
+        transaction : ['' , Validators.required],
+        ac : ['' , Validators.required],
+        date : ['' , Validators.required],
+        station : ['' , Validators.required],
         
       })
   
