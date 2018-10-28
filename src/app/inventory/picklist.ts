@@ -22,7 +22,7 @@ export class PickListComponent
   
   createForm()
   {
-     this.newPnForm = this.fb.group(
+     this.newPckListForm = this.fb.group(
       {  
         wo : [''],
         inv_loc: ['', Validators.required],
@@ -39,7 +39,7 @@ export class PickListComponent
   
 
   get pns(): FormArray {
-    return this.newPnForm.get('pns') as FormArray;
+    return this.newPckListForm.get('pns') as FormArray;
   };
 
   setAlerts(pns: PNs[]) {
