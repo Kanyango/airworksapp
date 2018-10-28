@@ -25,3 +25,9 @@ export class Alerts
   alert_lev = '';
   alert_rate = '';
 }
+export class PNs
+{
+  pn = '';
+  qty = '';
+  stock_uom = '';
+}
