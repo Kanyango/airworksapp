@@ -50,22 +50,8 @@ export class NewTaskComponent {
         slats: ['', Validators.required],
         fuel_tanks: ['', Validators.required],
         mechanic: ['', Validators.required],
-        corr: ['', Validators.required],
         allow_defer: ['', Validators.required],
-        zonal: [''],
-        mand_class: [''],
-        rsvm: [''],
-        rii: [''],
-        ac_jack: [''],
-        etops: [''],
-        ir: [''],
-        pneu_power: [''],
-        critical_task: [''],
-        ectm: [''],
-        cdccl: [''],
-        func_task: [''],
-        leck_chk: [''],
-        indp_task: [''],
+        
         
         items : this.fb.array([])
         
