@@ -40,12 +40,12 @@
                         <p class="mb-1">Flight Date: {{ one.flight_date }}</p>
                         <small>A/C Origin: {{ one.origin }}</small> -
                         <small>A/C Destn: {{ one.destination }}</small>
-                          <a routerLink="/addecm" class="btn btn-primary float-right" type="button">
-                                P/N install/remove 
-                            </a>
+                          <defpnreminst-component></defpnreminst-component>
+                        &nbsp;&nbsp;
                             <a routerLink="/addecm" class="btn btn-primary float-right" type="button">
                                 ECM
                             </a>
+                        &nbsp;&nbsp;
                           <a routerLink="/new_requisition" class="btn btn-success float-right" type="button">
                                 requisition
                             </a>
