@@ -38,6 +38,7 @@ export class TaskItems
   element = '';
   pn = '';
   qty = '';
+  pn_desc = '';
   panel = '';
   pan_desc = '';
   pan_ref = '';
