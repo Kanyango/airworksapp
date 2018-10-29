@@ -34,6 +34,7 @@ export class PNs
 export class TaskItems
 {
   desc = '';
+  part_type = '';
   ref = '';
   element = '';
   pn = '';
