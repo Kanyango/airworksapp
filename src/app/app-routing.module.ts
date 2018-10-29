@@ -46,8 +46,6 @@ import { RequisitionComponent  } from './req/newreq';
 import { NewAircraftComponent } from './amp/acs/newac';
 import { NewDefectRPTComponent  } from './reports/defectRpt';
 import { PickListComponent  } from './inventory/picklist';
-import { WOTaskMontComponent   } from './amp/wokds/taskmont';
-
 
 const routes: Routes = 
         [
@@ -94,8 +92,8 @@ const routes: Routes =
              { path: 'newaircraft', component: NewAircraftComponent },
             { path: 'new_requisition', component: RequisitionComponent },
             { path: 'new_defect_report', component: NewDefectRPTComponent },
-            { path: 'new_picklist', component: PickListComponent },
-           { path: 'wo_task_card', component: WOTaskMontComponent }
+            { path: 'new_picklist', component: PickListComponent }
+
         ];
 
 @NgModule({
