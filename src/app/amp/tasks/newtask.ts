@@ -60,18 +60,18 @@ export class NewTaskComponent {
     }
   
 
-  get pns(): FormArray {
-    return this.newPckListForm.get('pns') as FormArray;
+  get items(): FormArray {
+    return this.newPckListForm.get('items') as FormArray;
   };
 
-  setAlerts(pns: PNs[]) {
+  setAlerts(items: TaskItems[]) {
     const pnsFGs = pns.map(pn => this.fb.group(pn));
     const pnsFormArray = this.fb.array(pnsFGs);
-    this.newPckListForm.setControl('pns', pnsFormArray);
+    this.newPckListForm.setControl('items', pnsFormArray);
   }
 
-  addPn() {
-    this.pns.push(this.fb.group(new PNs()));
+  addItem() {
+    this.items.push(this.fb.group(new TaskItems()));
   }
   
   onSubmit()
