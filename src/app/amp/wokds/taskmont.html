@@ -1,13 +1,13 @@
-
-<ng-template #content let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">WO Task Cards Monitor</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <form>
+<navbar-component></navbar-component>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 card">
+      <div class="card-body">
+        <h3 class="card-title">Task Monitoring Card</h3>
+         <hr>
+         <form>
     <ngb-tabset>
       <ngb-tab title="General">
         <ng-template ngbTabContent>
@@ -151,12 +151,8 @@
       </ngb-tab>
     </ngb-tabset>
     </form>
+      </div>
+    </div>
   </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">
-        add
-    </button>
-  </div>
-</ng-template>
-
-<button class="btn btn-primary" (click)="open(content)">add task card</button>
+</div>
+      
