@@ -49,7 +49,6 @@ export class NewTaskComponent {
         spoilers: ['', Validators.required],
         slats: ['', Validators.required],
         fuel_tanks: ['', Validators.required],
-        mechanic: ['', Validators.required],
         allow_defer: ['', Validators.required],
         
         
@@ -76,6 +75,6 @@ export class NewTaskComponent {
   
   onSubmit()
   {
-    console.log(this.newPckListForm.value);
+    console.log(this.taskCardForm.value);
   }
 }
