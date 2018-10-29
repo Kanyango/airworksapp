@@ -28,7 +28,6 @@ export class NewWKDComponent {
         location: ['', Validators.required],
         site: ['', Validators.required],
         priority: ['', Validators.required],
-        description: ['', Validators.required],
         ac: ['', Validators.required],
         sn: ['', Validators.required],
         tat: ['', Validators.required],
