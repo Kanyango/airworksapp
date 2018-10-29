@@ -110,41 +110,40 @@
             <br>
               <h4>Card Items</h4>
               <hr>
-            <div class="row">
-              
+             <div formArrayName="items" class="card" >
+                  <div class="card-body" *ngFor="let item of items.controls; let i=index" [formGroupName]="i" >
+                     <div class="row">
+             
               <div class="col-md-12">
-                <div class="form-group" style="display: inline-block">
-                  <label>Description</label>
-                  <input class="form-control"/>
-                </div>
+                
                 <div class="form-group" style="display: inline-block">
                   <label>Manual Reference</label>
-                  <input class="form-control"/>
+                  <input class="form-control" formControlName="ref"/>
                 </div>
                 <div class="form-group" style="display: inline-block">
                   <label>Element</label>
-                  <input class="form-control"/>
+                  <input class="form-control" formControlName="element"/>
                 </div>
                 <div class="form-group" >
                   <label>Description</label>
-                  <textarea class="form-control"></textarea>
+                  <textarea class="form-control" formControlName="desc"></textarea>
                 </div>
                 <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
                    <ngb-panel title="Parts">
                       <ng-template ngbPanelContent>
                         <div class="form-group" style="display: inline-block">
                             <label>P/N</label>
-                            <input class="form-control"/>
+                            <input class="form-control" formControlName="pn"/>
                           </div>
                           <div class="form-group" style="display: inline-block">
                             <label>qty</label>
-                            <input class="form-control"/>
+                            <input class="form-control" formControlName="qty"/>
                           </div>
                           <div class="form-group" style="display: inline-block">
                             <label>Description</label>
-                            <input class="form-control"/>
+                            <input class="form-control" formControlName="pn_desc"/>
                           </div>
-                          <div class="form-group" style="display: inline-block">
+                          <div class="form-group" style="display: inline-block" formControlName="part_type">
                             <label>Part type</label>
                             <select class="form-control">
                               <option value="spare">Spare</option>
@@ -157,15 +156,15 @@
                       <ng-template ngbPanelContent>
                         <div class="form-group" style="display: inline-block">
                             <label>Panel</label>
-                            <input class="form-control"/>
+                            <input class="form-control" formControlName="panel"/>
                           </div>
                           <div class="form-group" style="display: inline-block">
                             <label>Description</label>
-                            <input class="form-control"/>
+                            <input class="form-control" formControlName="pan_desc"/>
                           </div>
                           <div class="form-group" style="display: inline-block">
                             <label>Reference</label>
-                            <input class="form-control"/>
+                            <input class="form-control" formControlName="pan_ref"/>
                           </div>
                      </ng-template>
                    </ngb-panel>
@@ -173,18 +172,19 @@
                       <ng-template ngbPanelContent>
                         <div class="form-group" style="display: inline-block">
                             <label>Zone</label>
-                            <input class="form-control"/>
+                            <input class="form-control" formControlName="zone"/>
                           </div>
                           <div class="form-group" style="display: inline-block">
                             <label>Description</label>
-                            <input class="form-control"/>
+                            <input class="form-control" formControlName="zone_desc"/>
                           </div>
                           
                      </ng-template>
                    </ngb-panel>
                 </ngb-accordion>
               </div>
-              
+                </div>
+               </div>
               <div class="row">
                 
               </div>
