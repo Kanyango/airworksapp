@@ -14,7 +14,7 @@ export class WOTaskMontComponent {
   
   tasks = [{name: "Task 1"}, {name: "Task 2"}]
 
-  constructor(private modalService: NgbModal)
+  constructor(private modalService: NgbModal, private fb: FormBuilder)
   {
     this.creatForm()
   }
