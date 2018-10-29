@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import { FormGroup,FormControl,FormBuilder, Validators, FormArray } from '@angular/forms'; 
-import { TaskItems } from '../services/models';
+import { TaskItems } from '../../services/models';
 
   @Component({
   selector: 'newtask-component',
