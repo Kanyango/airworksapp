@@ -9,6 +9,7 @@
           <h3 class="card-title">New Task Card</h3>
           <hr>
           <div class="container">
+            <form>
             <div class="row">
               
               <div class="col-md-4">
@@ -185,12 +186,10 @@
               </div>
                 </div>
                </div>
-              <div class="row">
-                
-              </div>
-              
              
               
+             
+               <button class="btn btn-success" type="submit" [disabled]="!taskCardForm.valid"> create </button>
             </div>
           </div>
           
