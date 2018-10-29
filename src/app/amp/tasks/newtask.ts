@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
-import {FormGroup,FormControl,FormBuilder} from '@angular/forms'; 
 import { FormGroup,FormControl,FormBuilder, Validators, FormArray } from '@angular/forms'; 
 import { TaskItems } from '../services/models';
 
@@ -62,13 +61,13 @@ export class NewTaskComponent {
   
 
   get items(): FormArray {
-    return this.newPckListForm.get('items') as FormArray;
+    return this.taskCardForm.get('items') as FormArray;
   };
 
   setAlerts(items: TaskItems[]) {
-    const pnsFGs = pns.map(pn => this.fb.group(pn));
-    const pnsFormArray = this.fb.array(pnsFGs);
-    this.newPckListForm.setControl('items', pnsFormArray);
+    const itemsFGs = items.map(item => this.fb.group(item));
+    const itemsFormArray = this.fb.array(itemsFGs);
+    this.taskCardForm.setControl('items', itemsFormArray);
   }
 
   addItem() {
