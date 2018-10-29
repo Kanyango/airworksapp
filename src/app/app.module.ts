@@ -72,6 +72,7 @@ import { RequisitionComponent  } from './req/newreq';
 import { NewDefectRPTComponent  } from './reports/defectRpt';
 import { DefPNRemInstComponent  } from './reports/defpnreminst';
 import { PickListComponent  } from './inventory/picklist';
+import { WOTaskMontComponent   } from './amp/wokds/taskmont';
 
 @NgModule({
   declarations: [
@@ -133,7 +134,8 @@ import { PickListComponent  } from './inventory/picklist';
     RequisitionComponent,
     NewDefectRPTComponent,
     DefPNRemInstComponent,
-    PickListComponent
+    PickListComponent,
+    WOTaskMontComponent
     
   ],
   imports: [
