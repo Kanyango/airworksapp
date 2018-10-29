@@ -6,7 +6,7 @@
     </button>
   </div>
   <div class="modal-body">
-      <form>
+      <form [formGroup]="woTaskForm" (ngSubmit)="onSubmit()">
     <ngb-tabset>
       <ngb-tab title="General">
         <ng-template ngbTabContent>
