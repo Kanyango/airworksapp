@@ -30,6 +30,7 @@ export class NewTaskComponent {
         weight_bal: [''],
         status: [''],
         revision: ['', Validators.required],
+        revised_by : ['',Validators.required],
         prioriy: ['', Validators.required],
         mel_cdl: ['', Validators.required],
         grnd_time: ['', Validators.required],
